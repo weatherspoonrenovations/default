@@ -1,6 +1,6 @@
 # Toy Closet Build Plan
 
-Revision 4, built from on-site measurements taken 16 September 2026. Drawings (plan, back-wall elevation, depth section, left-wall elevation) are in `closet-shelving-plan.html`.
+Revision 5, built from on-site measurements taken 16 September 2026. Drawings (plan, back-wall elevation, depth section, left-wall elevation) are in `closet-shelving-plan.html`.
 
 One wall-hung plywood unit runs the full 87 3/8" of the back wall in three bays: bins plus the generator at the left, five tiers of toy and supply bins in the middle, and a floor-to-ceiling utility bay at the right where the laundry chase makes the floor unusable anyway.
 
@@ -18,6 +18,7 @@ Orientation: stand in the door opening facing in. The **back wall** is the long 
 | Door rough opening | 32" | Front wall, 23 1/2" in from the left end. |
 | Wall left of the door | 23 1/2" | |
 | Wall right of the door | 14 3/8" | Between the opening and the laundry chase. |
+| Outlet rough-in | low, left end wall | Same wall as the junction boxes, forward of them. Distance from the back corner still to be measured. |
 | Generator | 16" W x 14" H x 13" D | Fits inside the 16" shelf depth, nothing protrudes. |
 | Laundry chase | 17 1/8" W x 22" D x 40 7/8" H | Front-right corner, against the right end wall. |
 | Gap, chase to back wall | 14 7/8" | Limits the right end of the unit to 14" deep. |
@@ -52,9 +53,11 @@ Dividers are 3/4" plywood: one at 27 1/2" running floor to 75", one at 62 1/8" r
 
 ## Power
 
-The generator lives on the 15" shelf in bay A, on the right-hand side of that bay, the corner of the unit nearest the door. Its top sits at 29", so the display reads at a glance and you lift it out at hip height instead of squatting. Receptacle on the back wall inside bay A at 22" above the finished floor, behind it.
+The outlet is on the left end wall, low, forward of the junction boxes. So the generator goes to the **left end of bay A**, hard against that wall, on the 15" shelf. Its top sits at 29", so the display reads at a glance and you lift it out at hip height instead of squatting. Its cord drops off the left end of the shelf and down the wall to the outlet. Notch the left-rear corner of that shelf about 1 1/2" square so the cord is not pinched against the cleat.
 
-Leave the 16 1/4" tier open at the front, no door, nothing stacked on top. These units run a fan while charging and while delivering; 2 1/4" of headroom plus an open face keeps it breathing. The 11" of shelf beside it takes one standard bin, or flat goods on edge: cutting mats, clipboards, poster board.
+Leave the 16 1/4" tier open at the front, no door, nothing stacked on top. These units run a fan while charging and while delivering; 2 1/4" of headroom plus an open face keeps it breathing. The 11" of shelf beside it, now on its right, takes one standard bin, or flat goods on edge: cutting mats, clipboards, poster board.
+
+**Measure how far the outlet sits from the back corner before you build.** The unit is 16" deep, so anything closer than 16" to the back wall ends up behind it. Survivable for a generator you plug in once and leave, but you could not unplug it without pulling a shelf. If it measures under 16", either move the rough-in forward to about 20" (a drywall patch, nothing more) or accept the plug-once arrangement knowingly. Past 16" it stays in the open and there is nothing to do.
 
 If the vacuum is a cordless stick with a dock, add a second receptacle in bay C at 40".
 
@@ -116,17 +119,17 @@ Fixed cleats beat wire shelving or adjustable standards here: no sag under bin w
 ## Build order
 
 1. **Mark out.** Snap a level line at 74 1/4" across the back wall; confirm it clears the soffit by 1 3/4" at both ends. Mark studs on painter's tape at that height. Mark bay lines at 27 1/2, 28 1/4, 62 1/8, 62 7/8 on floor and wall.
-2. **Electrical.** Receptacle in bay A at 22" AFF toward the right side of the bay, second in bay C at 40" if needed. Build the access panel for the junction boxes on the left end wall now, while the closet is empty.
+2. **Electrical.** Measure the outlet rough-in from the back corner along the left wall and decide whether to move it forward, per the Power section. Trim it out. Second receptacle in bay C at 40" if needed. Build the access panel for the junction boxes on the left end wall now, while the closet is empty.
 3. **Floor.** Done. The floating floor is in and runs under where the unit goes, which is what this plan assumes. Nothing here is fastened through it. Re-measure the ceiling off the finished floor before cutting the full-height divider.
 4. **Cut and finish outside the closet.** Rip, cut to length, face-strip, sand, prime, paint.
 5. **Cleats.** Two sets of lines. Bay B: 14 1/4, 29 1/4, 44 1/4, 59 1/4, 73 1/2. Bay A: 14 1/4, 31 1/4, 46 1/4, 61 1/4, 73 1/2. Bay C: 71 1/4. Two screws per stud. Left-wall side cleats follow bay A's numbers.
 6. **Dividers.** Both plumb, packed 1/4" off the floor, tacked to the back cleats.
 7. **Shelves, bottom to top.** Drop onto cleat, screw down into cleat, screw through dividers into shelf edges. The shelves hold the dividers straight.
-8. **Fit-out.** Generator onto the 15" shelf, plugged in, check the display reads from the doorway. Vacuum and broom in bay C. Hooks on the front wall right of the door and low on the left face of the chase for backpacks. Edge labels last.
+8. **Fit-out.** Generator onto the left end of the 15" shelf, cord through the notch, plugged in, check the display reads from the doorway. Vacuum and broom in bay C. Hooks on the front wall right of the door and low on the left face of the chase for backpacks. Edge labels last.
 
 ## Options
 
-- **Left-wall tower (phase 2).** The left end wall has 20 1/2" of unused depth in front of the unit. A 12" deep x 20 1/2" wide stack fits there, out of the door's path. Third sheet of plywood. Outer panel screwed to the front wall at its front edge, shelves on cleats on the left wall. Games, books, bulk paper. **Stop it at 75", not the ceiling**, with five shelves at 15, 30, 45, 60, 74 1/4. The junction box surround is 15 1/4" wide, and if it starts forward of the back corner rather than hard against it, a full-height tower runs into it. Stopping at 75" removes the risk and lines the tower up with the main unit.
+- **Left-wall tower (phase 2).** The left end wall has 20 1/2" of unused depth in front of the unit. A 12" deep x 20 1/2" wide stack fits there, out of the door's path. Third sheet of plywood. Outer panel screwed to the front wall at its front edge, shelves on cleats on the left wall. Games, books, bulk paper. **Stop it at 75", not the ceiling**, with five shelves at 15, 30, 45, 60, 74 1/4. The junction box surround is 15 1/4" wide, and if it starts forward of the back corner rather than hard against it, a full-height tower runs into it. Stopping at 75" removes the risk and lines the tower up with the main unit. Check the outlet too: the tower stands on the same stretch of left wall, so leave its bottom bay open at the back, or cut the outlet into the tower's own side panel rather than burying it.
 - **High shelf over the soffit.** Above 74 1/4" there is 21 3/4" of open height across bays A and B, and the soffit fills only the back 6". A 9" deep shelf at 85" on cleats screwed to the soffit face and the two dividers adds 62" of storage for light bulky things. Ladder access only.
 - **Chute.** The opening in the chase top is a laundry drop, so leave it open. The flat around it at 40 7/8" is the natural landing spot for pockets, chargers and library books.
 
@@ -137,5 +140,6 @@ Fixed cleats beat wire shelving or adjustable standards here: no sag under bin w
 - [ ] Ceiling height after the floating floor. The full-height divider is cut at 95 1/2" to allow for it.
 - [ ] Door swings out. A 32" in-swing door would sweep the front of bay A.
 - [ ] Generator height with the carry handle raised, if the handle is fixed rather than folding. The tier gives 16 1/4".
+- [ ] How far the outlet rough-in sits from the back corner along the left wall. Under 16" and the unit covers it. The one measurement that could still send you back to the drywall.
 - [ ] Height of the junction box surround's bottom edge off the finished floor. Top shelf lands at 74 1/4", its cleat stops at 73 1/2". Anything below 74 1/4" clashes; the fix is to drop bay A's top shelf to 72". Tightest clearance in the plan.
 - [ ] How far the surround sits forward of the back corner. Only matters for the phase 2 tower, which is why that now stops at 75".
