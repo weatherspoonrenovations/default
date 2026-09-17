@@ -1,6 +1,6 @@
 # Toy Closet Build Plan
 
-Revision 6, built from on-site measurements taken 16 September 2026. Drawings (plan, back-wall elevation, depth section, left-wall elevation) are in `closet-shelving-plan.html`.
+Revision 7, built from on-site measurements taken 16 September 2026. Drawings (plan, back-wall elevation, depth section, left-wall elevation) are in `closet-shelving-plan.html`.
 
 One wall-hung plywood unit runs the full 87 3/8" of the back wall in three bays: bins plus the generator at the left, five tiers of toy and supply bins in the middle, and a floor-to-ceiling utility bay at the right where the laundry chase makes the floor unusable anyway.
 
@@ -33,9 +33,18 @@ Two of the four walls are the back of something finished, which changes what you
 - **The left end wall carries a recessed, lit bookcase**, with LED strips under its shelves.
 - **The two boxes in the left wall pocket are the drivers for both**, stepping 120V down to 12V. Low-voltage cable runs from that pocket through the left wall and across into the back wall's nook.
 
-**Fasten nothing to the nook, ever.** No cleat, no screw, no shelf bearing on its face or underside. There is an LED channel and wiring inside it, its structure is unknown from this side, and it is finished work in another room. Everything here stops below 76" for that reason. The earlier option that hung a shelf off it is removed.
+### The framing behind the drywall
 
-**Scan the left wall before driving a 2 1/2" screw into it.** The bookcase on the other side is recessed, so the partition may be much thinner than a normal stud wall, and it carries low-voltage cable a live-wire detector will not see. Confirm the thickness first. If it is a shallow cavity, do not cleat to it: add a plywood end panel at the left end of bay A instead (see Options). The back wall is ordinary below 76" and carries the load normally.
+The pre-drywall photo settles what would otherwise have been two cautious guesses.
+
+- **The left end wall is a proper framed wall with horizontal blocking through it.** That blocking carries the lit bookcase's shelves on the far side and is equally available from inside the closet. The left-wall cleats land on solid wood rather than hunting a single stud, which is better backing than an ordinary wall gives.
+- **The nook's bottom edge is carried on 2x3 studs.** The underside at 76" is framed, not hollow drywall.
+
+**Map the blocking before snapping the cleat lines.** If a row lands within about 2" of one of bay A's cleat lines, move the cleat onto it. Every bay A tier has at least 12 1/4" of clear height, so a 2" shift costs nothing. The one line that cannot move is the 15" shelf, because the generator tier above it must keep its 16 1/4".
+
+**Still keep out of the nook itself.** Its bottom edge is framed, so a fixing right at 76" would hold, but the box above that line contains the LED channel and its wiring and it is finished work in another room. Nothing here needs to go there. The earlier option that hung a shelf off the nook face is removed: that face has no framing behind it at the height a shelf would have needed.
+
+Low-voltage cable still runs up the left wall's stud bays to feed both nooks, and a live-wire detector will not see it, so scan before drilling. A 2 1/2" screw into blocking is fine: it buries about 2" into a member at least 3 1/2" deep and cannot come through the far side. The back wall is ordinary below 76" and carries the load normally.
 
 ## What the shape dictates
 
@@ -79,7 +88,7 @@ If the vacuum is a cordless stick with a dock, add a second receptacle in bay C 
 
 Drivers are not junction boxes, and the difference matters. They run warm and are the component in that wall most likely to fail and need swapping, so the cover must come off easily and the pocket must breathe. Use a screwed-on painted panel with a vent: a row of holes behind perforated metal, or a slotted lower edge. Never caulk, tape or mud it shut, and never stack anything against it.
 
-Nothing in the main build reaches them. The left wall carries bay A's shelf ends on 1x3 cleats at 14 1/4, 31 1/4, 46 1/4, 61 1/4 and 73 1/2. The top shelf lands at 74 1/4, leaving **1 3/4" below the surround**. That is the tightest clearance in the plan and the one number to check on site.
+Nothing in the main build reaches them. The left wall carries bay A's shelf ends on 1x3 cleats at 14 1/4, 31 1/4, 46 1/4, 61 1/4 and 73 1/2, screwed into studs and into the blocking wherever a row falls close. The top shelf lands at 74 1/4, leaving **1 3/4" below the surround**. That is the tightest clearance in the plan and the one number to check on site.
 
 Reach it from a step ladder in the middle of the floor.
 
@@ -132,11 +141,11 @@ Fixed cleats beat wire shelving or adjustable standards here: no sag under bin w
 
 ## Build order
 
-1. **Mark out.** Snap a level line at 74 1/4" across the back wall; confirm it clears the soffit by 1 3/4" at both ends. Mark studs on painter's tape at that height. Mark bay lines at 27 1/2, 28 1/4, 62 1/8, 62 7/8 on floor and wall.
-2. **Electrical.** Measure the outlet rough-in from the back corner along the left wall and decide whether to move it forward, per the Power section. Trim it out. Second receptacle in bay C at 40" if needed. Build the vented access panel for the driver pocket on the left end wall now, while the closet is empty. Confirm the left wall's thickness at the same time, before any cleat goes into it.
+1. **Mark out.** Snap a level line at 74 1/4" across the back wall; confirm it clears the nook by 1 3/4" at both ends. Mark studs on painter's tape at that height. On the left end wall find the horizontal blocking too and mark every row, since those are the best fixings in the closet. Mark bay lines at 27 1/2, 28 1/4, 62 1/8, 62 7/8 on floor and wall.
+2. **Electrical.** Measure the outlet rough-in from the back corner along the left wall and decide whether to move it forward, per the Power section. Trim it out. Second receptacle in bay C at 40" if needed. Build the vented access panel for the driver pocket on the left end wall now, while the closet is empty.
 3. **Floor.** Done. The floating floor is in and runs under where the unit goes, which is what this plan assumes. Nothing here is fastened through it. Re-measure the ceiling off the finished floor before cutting the full-height divider.
 4. **Cut and finish outside the closet.** Rip, cut to length, face-strip, sand, prime, paint.
-5. **Cleats.** Back wall first; it is ordinary wall below 76" and carries the load. End cleats after, once you know what the left wall is made of. Two sets of lines. Bay B: 14 1/4, 29 1/4, 44 1/4, 59 1/4, 73 1/2. Bay A: 14 1/4, 31 1/4, 46 1/4, 61 1/4, 73 1/2. Bay C: 71 1/4. Two screws per stud. Left-wall side cleats follow bay A's numbers.
+5. **Cleats.** Back wall first; it is ordinary wall below 76" and carries the load. End cleats after, landing on blocking wherever a row falls close to a line. Two sets of lines. Bay B: 14 1/4, 29 1/4, 44 1/4, 59 1/4, 73 1/2. Bay A: 14 1/4, 31 1/4, 46 1/4, 61 1/4, 73 1/2. Bay C: 71 1/4. Two screws per stud. Left-wall side cleats follow bay A's numbers.
 6. **Dividers.** Both plumb, packed 1/4" off the floor, tacked to the back cleats.
 7. **Shelves, bottom to top.** Drop onto cleat, screw down into cleat, screw through dividers into shelf edges. The shelves hold the dividers straight.
 8. **Fit-out.** Generator onto the left end of the 15" shelf, cord through the notch, plugged in, check the display reads from the doorway. Vacuum and broom in bay C. Hooks on the front wall right of the door and low on the left face of the chase for backpacks. Edge labels last.
@@ -144,8 +153,8 @@ Fixed cleats beat wire shelving or adjustable standards here: no sag under bin w
 ## Options
 
 - **Left-wall tower (phase 2).** The left end wall has 20 1/2" of unused depth in front of the unit. A 12" deep x 20 1/2" wide stack fits there, out of the door's path. Third sheet of plywood. Outer panel screwed to the front wall at its front edge, shelves on cleats on the left wall. Games, books, bulk paper. **Stop it at 75", not the ceiling**, with five shelves at 15, 30, 45, 60, 74 1/4. The driver pocket is 15 1/4" wide, and if it starts forward of the back corner rather than hard against it, a full-height tower runs into it and buries equipment that has to stay reachable. Stopping at 75" removes the risk and lines the tower up with the main unit. Check the outlet too: the tower stands on the same stretch of left wall, so leave its bottom bay open at the back, or cut the outlet into the tower's own side panel rather than burying it.
-- **Left end panel, if the left wall is thin.** The base plan lands bay A's shelf ends on cleats screwed to the left wall. If that wall is a shallow cavity behind the recessed bookcase, put a third plywood panel at the left end of bay A instead, 15 1/4" x 75", standing on the floor and screwed to the back wall cleats and each shelf edge. The left wall then takes nothing heavier than a couple of short stabilising screws. This pushes the build just past two sheets, so buy a third.
-- **The space above 74 1/4" stays empty.** There is 21 3/4" of open height across bays A and B and it is tempting. Leave it. The only surfaces up there are the lit nook, which nothing may fasten to, and the tops of two dividers, which cannot carry a 62" span between them.
+- **Left end panel.** Not needed now that the left wall is known to be framed and blocked, but a tidy option if you would rather the shelves die into plywood than into cleats on a painted wall. A third panel at the left end of bay A, 15 1/4" x 75", standing on the floor and screwed to the back wall cleats and each shelf edge. Costs a third sheet.
+- **The space above 74 1/4" stays empty.** There is 21 3/4" of open height across bays A and B and it is tempting. Leave it. The 2x3s carry the nook's bottom edge at 76", but nothing carries a shelf at the height one would have to sit at, and the only other surfaces up there are two divider tops, which cannot span 62" between them.
 - **Chute.** The opening in the chase top is a laundry drop, so leave it open. The flat around it at 40 7/8" is the natural landing spot for pockets, chargers and library books.
 
 ## Still to confirm
@@ -158,4 +167,4 @@ Fixed cleats beat wire shelving or adjustable standards here: no sag under bin w
 - [ ] How far the outlet rough-in sits from the back corner along the left wall. Under 16" and the unit covers it. The one measurement that could still send you back to the drywall.
 - [ ] Height of the driver pocket's bottom edge off the finished floor. Top shelf lands at 74 1/4", its cleat stops at 73 1/2". Anything below 74 1/4" clashes; the fix is to drop bay A's top shelf to 72". Tightest clearance in the plan.
 - [ ] How far the pocket sits forward of the back corner. Only matters for the phase 2 tower, which is why that now stops at 75".
-- [ ] The left end wall's build-up: thickness between the closet and the recessed bookcase, and whether 2 1/2" screws are safe. If not, build the left end panel instead of wall cleats.
+- [ ] Heights of the horizontal blocking in the left end wall, so cleat lines can be nudged onto it where they fall close. Ten minutes with a stud finder before anything is snapped.
