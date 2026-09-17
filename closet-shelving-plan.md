@@ -1,103 +1,124 @@
 # Toy Closet Build Plan
 
-Fixed 3/4" plywood shelving on three walls of a narrow walk-in closet, every shelf on the same 15-inch lines, sized around one bin footprint. The floor under the back wall stays open for the backup-power generator and the vacuum, at the outlet.
+Revision 2, built from on-site measurements taken 16 September 2026. Drawings (plan, back-wall elevation, depth section) are in `closet-shelving-plan.html`.
 
-Drawings (plan and three elevations) are in `closet-shelving-plan.html`. Dimensions marked **(verify)** were read off the photos using the 96" ceiling as the scale. Measure before cutting; the plan is built so small differences only change cut lengths.
+One wall-hung plywood unit runs the full 87 3/8" of the back wall in three bays: the generator on the floor at the left, five tiers of toy and supply bins in the middle, and a floor-to-ceiling utility bay at the right where the laundry chase makes the floor unusable anyway.
 
-## What the photos say
+## The closet, as measured
 
-Orientation: stand in the doorway facing in. The door is on the **left long wall** at the front end. The **right long wall** carries the soffit. The **back wall** has the outlet low in its left corner and the junction-box opening high in the same corner. The laundry bump-out sits against the **front wall** beside the door.
+Orientation: stand in the door opening facing in. The **back wall** is the long wall in front of you. The **front wall** is the one the door is cut into. Left and right are your left and right.
 
-| Item | Value | Source |
+| Item | Measured | Notes |
 |---|---|---|
-| Ceiling | 96" | given |
-| Closet width | ~38" (verify) | back wall proportion, photo 2 |
-| Closet length | ~90" (verify) | right-wall photo 1 |
-| Soffit underside, right wall | ~72" (verify) | photo 1 |
-| Soffit projection | ~12" (verify) | photos 2, 3 |
-| Soffit length | ~66", ends ~2' short of the front wall (verify) | photo 1 |
-| Laundry bump-out | ~24" W x 16" D x 42" H (verify) | photos 4, 5 |
-| Outlet | ~12" AFF, bottom-left of back wall | photo 2 |
-| Junction-box opening | ~78–88" AFF, top-left of back wall | photo 2 |
-| Door rough opening | ~32", left wall at the front end | photos 2, 4 |
+| Back wall, floor level | 87 3/8" | The long dimension. Wide, shallow closet. |
+| Depth, both end walls | 36 1/2" | Matching left and right, so the room is square. |
+| Ceiling | 96" | Re-measure after the floating floor. |
+| Soffit, back wall | 62 1/8" W x 20" H x 6" D | Starts at the left end. Underside 76". Right edge at 62 1/8". |
+| Electrical box surround | 15 1/4" W x 14 3/8" H x 1 1/4" D | Left end of the soffit. Junction boxes must stay reachable. |
+| Door rough opening | 32" | Front wall, 23 1/2" in from the left end. |
+| Wall left of the door | 23 1/2" | |
+| Wall right of the door | 14 3/8" | Between the opening and the laundry chase. |
+| Laundry chase | 17 1/8" W x 22" D x 40 7/8" H | Front-right corner, against the right end wall. |
+| Gap, chase to back wall | 14 7/8" | Limits the right end of the unit to 14" deep. |
 
-## The concept
+Two checks close the layout. Across the front wall, 23 1/2 + 32 + 14 3/8 + 17 1/8 = 87", against the measured 87 3/8". Front to back, 22 + 14 7/8 = 36 7/8", against the measured 36 1/2".
 
-- All shelf tops on 15" lines: **15, 30, 45, 60, 75**. Every tier is 14 1/4" clear: one 11"-tall bin, or two 5 1/2" bins stacked.
-- **Right wall**: a 66"-long, 15"-deep unit, two bays, four shelves (15/30/45/60) under the soffit. Kid tiers below 45", adult tiers above.
-- **Back wall**: three 24"-deep shelves at 45/60/75. The 45 and 60 shelves span the full width (two large bins each). The 75 shelf is above the soffit underside, so it stops where the soffit begins: ~26" wide, one large bin, left end kept clear under the junction-box panel. Under the shelves: generator (24" cube on a dolly) against the right wall, vacuum in the 14" slot beside the outlet. 44 1/4" clear under the first shelf. Top tier runs to the ceiling, 21" clear.
-- **Front wall**: cap the bump-out (42" landing shelf), then shelves at 60 and 75 between the left wall and the right-wall unit, ~23" wide.
-- **Left wall**: aisle wall. No shelves. Vacuum dock in the back corner next to the outlet, hooks at 48" (backpacks) and 66" (bags, broom, step stool).
-- **Aisle**: 23" wide, 50" long past the door.
+## What the shape dictates
 
-If the hole in the bump-out top is an intentional laundry drop, leave it open and start the front-wall shelves at 60" as drawn. Otherwise cap it.
+At 36 1/2" deep this is a step-in closet, not a walk-in.
+
+- **All the storage goes on the back wall.** 87 3/8" of uninterrupted wall, more than the first plan got from three walls. Shelves 16" deep leave 20 1/2" of standing room.
+- **The right end is a pocket.** The chase projects 22" and leaves a 14 7/8" slot in front of the back wall's right 17 1/8". Nothing wide gets in or out, so it becomes the broom-and-vacuum bay where things stand on the floor.
+- **The soffit sets the ceiling for two thirds of the wall.** Underside 76", right edge at 62 1/8". That edge becomes the structural division: bays under it stop at 74 1/4", the bay past it runs to the ceiling.
+
+## The back wall unit
+
+One unit, 87 3/8" long, three bays, split on the soffit's right edge so no shelf needs notching. Everything hangs from cleats screwed into studs. Nothing is fastened through the floor.
+
+| Bay | Position | Clear width | Depth | Top | Job |
+|---|---|---|---|---|---|
+| A | 0 → 27 1/2 | 27 1/2" | 16" | 74 1/4" | Generator on the floor, three bin tiers above |
+| B | 28 1/4 → 62 1/8 | 33 7/8" | 16" | 74 1/4" | Main bin wall, five tiers, three bins each |
+| C | 62 7/8 → 87 3/8 | 24 1/2" | 14" | 96" | Vacuum, broom, step stool on the floor, one shelf at 72" |
+
+Shelf tops at 15, 30, 45, 60 and 74 1/4. Every tier 14 1/4" clear. Bay A has no shelf below 30 (generator). Bay C has nothing below 72.
+
+Dividers are 3/4" plywood: one at 27 1/2" running floor to 75", one at 62 1/8" running floor to ceiling, its left face landing exactly on the soffit's right edge.
+
+## Power
+
+Receptacle inside bay A, on the back wall, 6" above the finished floor, behind the generator. It stays plugged in and charging there. If the vacuum is a cordless stick with a dock, add a second receptacle in bay C at 40".
+
+The junction boxes in the soffit surround must stay accessible: cover the 15 1/4" x 14 3/8" opening with a screwed-on painted panel (1/2" plywood in a 1x2 frame, four screws), never caulk or mud. It sits at 76" and up, clear of every shelf.
 
 ## Bin module
 
-Footprint **11" x 15 1/4"**, heights 11" and 5 1/2". Two per bay side by side (22") plus a 7 3/4" small bin in the leftover space. The back wall takes the large version, 15 1/4" x 22 1/2", two per tier.
+Footprint **15 3/8" deep x 11" wide**, in 11" and 5 1/2" heights. Three across bay B with 7/8" to spare, two across bay A. Every tier is 14 1/4" clear, so a tall bin fits anywhere and two short ones stack in the same slot.
 
-| Role | Size | Where | Qty | IKEA SAMLA | Sterilite equivalent |
+| Role | Footprint | Height | Where | Qty | Example |
 |---|---|---|---|---|---|
-| Standard | 11 x 15 1/4 x 11" | right wall 0–60, front wall | 20 | 39x28x28 cm (6 gal) | 18 qt x2 stacked |
-| Half | 11 x 15 1/4 x 5 1/2" | right wall top tier | 8 | 39x28x14 cm (3 gal) | 15 qt |
-| Small | 7 3/4 x 11 x 5 1/2" | beside standard bins | 8 | 28x20x14 cm (1.3 gal) | 6 qt |
-| Large | 15 1/4 x 22 1/2 x 11" | back wall | 5 | 57x39x28 cm (12 gal) | 66 qt latch |
+| Tall bin | 15 3/8 x 11" | 11" | Bay B tiers, bay A upper tiers | 21 | IKEA SAMLA 22 L (39x28x28 cm) |
+| Half bin | 15 3/8 x 11" | 5 1/2" | Stack two per tier | 12 | IKEA SAMLA 11 L (39x28x14 cm) |
+| Small bin | 11 x 7 3/4" | 5 1/2" | Beside the pairs in bay A | 6 | IKEA SAMLA 5 L (28x20x14 cm) |
 
-Lids only on adult tiers. Label the shelf edge with a picture plus a word, not the bin.
+Check listed dimensions before ordering. Any bin at or under 15 3/8" deep and 11" wide works. Lids only above 60"; kid tiers work better open. Label the shelf edge with a picture and a word, not the bin.
 
-### Suggested first fill
+### What goes where
 
-| Tier | Right wall | Back wall | Front wall |
+| Height | Bay A | Bay B (3 bins per tier) | Bay C |
 |---|---|---|---|
-| floor–15 | blocks, LEGO, trains, dress-up (heavy) | generator + vacuum | bump-out |
-| 15–30 | toy sets by type | generator + vacuum | bump-out |
-| 30–45 | art and school supplies, daily | generator + vacuum | landing shelf at 42" |
-| 45–60 | puzzles, games, craft kits | bulk toys, rotation, outgrown-but-kept | bulk paper, kits |
-| 60–75 | half bins: batteries, cables, glue, tape (to 72") | seasonal, gifts, memory boxes | office/school overflow |
-| 75–96 | soffit | tall, bulky, light (one large bin; left end clear) | easels, poster board, rolls |
+| floor–15 | Generator, plugged in | Blocks, LEGO, trains, dress-up | Vacuum, broom, mop, step stool |
+| 15–30 | Generator | Toy sets by type: vehicles, figures, dolls | " |
+| 30–45 | Art paper, paint, glue | Art and school supplies, daily reach | " |
+| 45–60 | Puzzles and board games | Craft kits, workbooks, backpack refills | " |
+| 60–74 1/4 | Half bins: batteries, cables, tape | Rotation bins, outgrown but kept, seasonal | — |
+| 72–96 | open | open | Shelf at 72": light bulky, gift stash, memory boxes |
+
+The 30" to 45" band is the daily-use band, so it holds art and school supplies in both bays. Above 60" is adult reach; a step stool in bay C brings 45–60 into range for a seven-year-old.
 
 ## Materials and cut list
 
-Three sheets of 3/4" plywood plus pine. Shelves ripped at 14 1/4" plus a 3/4" x 1 1/2" pine face strip on the front edge = 15" finished depth.
+Two sheets of 3/4" plywood build the whole unit. Shelves ripped at 15 1/4" plus a pine face strip on the front edge = 16" finished depth. Bay B's 33 7/8" shelves take a 1x3 face strip (longest span in the build); everything else takes a 1x2.
 
 | Part | Qty | Size | From | Notes |
 |---|---|---|---|---|
-| Right-wall verticals | 3 | 15 x 71 1/2" | sheet 1, three 15" rips | height = soffit underside minus 1/2" |
-| Front-wall shelves | 2 | 14 1/4 x 23" | sheet 1 offcuts | width = closet width minus 15" |
-| Right-wall shelves | 8 | 14 1/4 x 31 7/8" | sheet 2, three rips, three per rip | bay = (66 − 2 1/4) / 2; one spare |
-| Back-wall shelves, 45 and 60 | 2 | 24 x 37 3/4" | sheet 3, first 24" rip | closet width minus 1/4" |
-| Back-wall shelf, 75 | 1 | 24 x 26" | sheet 3, second 24" rip | width minus soffit projection; right end on a cleat screwed to the soffit face |
-| Bump-out cap | 1 | ~24 x 16" | sheet 3, second rip | only if not a chute |
-| Cleats, 1x3 pine | 7 x 8' | ~49 ft | | right wall 8 x 31 7/8"; back wall 2 x 37 3/4" + 1 x 26" + 6 x 23"; front wall 2 x 23" + 2 x 14" |
-| Face strips, 1x2 pine | 6 x 8' | ~36 ft | | front edge of every shelf |
-| Screws | | | | #8 x 2 1/2" cleats to studs (~60); #8 x 1 1/4" shelf to cleat (~80); #8 x 2" through verticals (~40); 1 1/4" brads + glue |
-| Finish | | | | primer + 2 coats enamel, or 2 coats water-based poly; finish before install |
-| Hardware | | | | 300 lb furniture dolly, vacuum dock, 6–8 hooks, panel screws, edge labels |
+| Divider, bay A/B | 1 | 15 1/4 x 75" | Sheet 1, rip 2 | Stops 1/4" above the finished floor |
+| Divider, bay B/C | 1 | 15 1/4 x 95 1/2" | Sheet 1, rip 1 | Full height; left face at 62 1/8" |
+| Bay A shelves | 4 | 15 1/4 x 27 1/2" | Sheet 1 rip 3 + one from sheet 2 | At 30, 45, 60, 74 1/4 |
+| Bay B shelves | 5 | 15 1/4 x 33 7/8" | Sheet 2, rips 1–3 | At 15, 30, 45, 60, 74 1/4 |
+| Bay C shelf | 1 | 13 1/4 x 24 1/2" | Sheet 2 offcut | At 72; narrower for the 14 7/8" pocket |
+| Cleats, 1x3 pine | 5 x 8' | ~31 ft | | One back cleat per shelf at bay width; 15 1/4" side cleats on the left wall at four heights; 13 1/4" cleat on the right wall at 72" |
+| Face strips, 1x3 pine | 2 x 8' | ~14 ft | | Bay B shelves only |
+| Face strips, 1x2 pine | 2 x 8' | ~12 ft | | Bay A and C shelves, divider front edges |
+| Screws | | | | #8 x 2 1/2" cleats into studs (~50); #8 x 1 1/4" shelf into cleat (~60); #8 x 2" through dividers (~30); 1 1/4" brads + glue |
+| Finish | | | | Primer + 2 coats enamel, or 2 coats water-based poly; finish before installing |
+| Hardware | | | | 300 lb furniture dolly, vacuum dock, 4 hooks, access panel stock, edge labels |
 
-Rough cost: $300–350 for wood, screws and finish. Bins extra, buy in stages.
+Roughly $260–300 for plywood, pine, screws and finish. Bins extra, buy a tier at a time.
 
-Fixed cleats beat wire shelving or track standards here: no sag under bin weight, nothing for bin bottoms to catch on, cheaper, and the 15" module removes the need for adjustability.
+Fixed cleats beat wire shelving or adjustable standards here: no sag under bin weight, nothing for bin bottoms to catch on, cheaper, and the 15" module removes the need for adjustability.
 
 ## Build order
 
-1. **Measure and mark.** Width at three heights, length, soffit, bump-out, junction-box opening bottom edge, stud centers on all four walls. Mark studs on painter's tape at 45".
-2. **Electrical first.** Install the outlet. Fit a removable screwed-on panel over the junction-box opening. No caulk or glue.
-3. **Floor next, the whole floor.** Floating floor across the entire closet including under the shelving, with the expansion gap at every wall and around the bump-out. Nothing in this plan is fastened through the floor.
-4. **Cut and finish the plywood** outside the closet. Face-strip, sand, prime, paint.
-5. **Snap level lines** for cleat tops at 14 1/4, 29 1/4, 44 1/4, 59 1/4, 74 1/4" (shelf top minus 3/4"). Confirm the lines meet at the corners.
-6. **Right-wall unit.** Eight bay-length cleats into studs, two screws per stud. Stand the three verticals plumb on the floor, drop each shelf onto its cleat, screw down into the cleat and through the verticals into the shelf edges. Bottom to top.
-7. **Back-wall shelves.** Cleats on the back wall and both side walls at the 45 and 60 lines, drop the two full-width shelves in, screw down. The right-side cleats live in the back 24" of the right wall, in front of the unit's rear vertical. For the 75 shelf the right cleat goes on the soffit face.
-8. **Front wall.** Cap the bump-out. Cleats on the front and left walls at 59 1/4 and 74 1/4; screw the shelves' right ends into the unit's front vertical.
-9. **Fit-out.** Dolly under the generator, plug in, check the display reads from the aisle. Dock the vacuum. Hooks. Edge labels. Bins.
+1. **Mark out.** Snap a level line at 74 1/4" across the back wall; confirm it clears the soffit by 1 3/4" at both ends. Mark studs on painter's tape at that height. Mark bay lines at 27 1/2, 28 1/4, 62 1/8, 62 7/8 on floor and wall.
+2. **Electrical.** Receptacle in bay A at 6" AFF, second in bay C at 40" if needed. Build the junction-box access panel now.
+3. **Floor.** Floating floor across the entire closet including under the unit, expansion gap at every wall and around the chase.
+4. **Cut and finish outside the closet.** Rip, cut to length, face-strip, sand, prime, paint.
+5. **Cleats.** Level lines for cleat tops at 14 1/4, 29 1/4, 44 1/4, 59 1/4, 73 1/2, plus 71 1/4 in bay C only. Two screws per stud.
+6. **Dividers.** Both plumb, packed 1/4" off the floor, tacked to the back cleats.
+7. **Shelves, bottom to top.** Drop onto cleat, screw down into cleat, screw through dividers into shelf edges. The shelves hold the dividers straight.
+8. **Fit-out.** Dolly under the generator, plug in, check the display reads from the doorway. Vacuum and broom in bay C. Hooks on the front wall right of the door and low on the left face of the chase for backpacks. Edge labels last.
 
-## Verify before you cut
+## Options
 
-- [ ] Closet width at 12", 48", 84" AFF; use the smallest.
-- [ ] Closet length at floor level and at 60".
-- [ ] Soffit underside at both ends and its projection. If it projects more than 15", widen the right-wall unit to match.
-- [ ] Soffit end: if it stops short of the front wall, the front 24" of the right-wall unit can take a fifth shelf at 75".
-- [ ] Bump-out width, depth, height; is the top hole a chute?
-- [ ] Junction-box opening bottom edge. Below 76": drop the back wall's top shelf to 72".
-- [ ] Vacuum parked height. First back-wall shelf clears 44 1/4"; taller vacuums dock on the left wall.
-- [ ] Door swing. A 32" in-swing door hits the right-wall unit; swing out, bifold or pocket.
-- [ ] Right-wall stud spacing. Each 32" bay cleat needs two studs; with 24" spacing, add a toggle at the loose end.
+- **Left-wall tower (phase 2).** The left end wall has 20 1/2" of unused depth in front of the unit. A 12" deep x 20 1/2" wide stack of six shelves at 15, 30, 45, 60, 75, 88" fits there, out of the door's path. Third sheet of plywood. Outer panel screwed to the front wall at its front edge, shelves on cleats on the left wall. Games, books, bulk paper.
+- **High shelf over the soffit.** Above 74 1/4" there is 21 3/4" of open height across bays A and B, and the soffit fills only the back 6". A 9" deep shelf at 85" on cleats screwed to the soffit face and the two dividers adds 62" of storage for light bulky things. Ladder access only.
+- **Chute.** The opening in the chase top is a laundry drop, so leave it open. The flat around it at 40 7/8" is the natural landing spot for pockets, chargers and library books.
+
+## Still to confirm
+
+- [ ] Vacuum parked height and width. Bay C gives 24 1/2" wide x 72" high.
+- [ ] Stud spacing on the back wall. Bay B's 33 7/8" cleat needs two studs; at 24" on centre it may catch one, so add a toggle at the loose end.
+- [ ] Ceiling height after the floating floor. The full-height divider is cut at 95 1/2" to allow for it.
+- [ ] Door swings out. A 32" in-swing door would sweep the generator bay.
+- [ ] Generator footprint including handle and cable coil. Bay A gives 27 1/2" for a 24" cube.

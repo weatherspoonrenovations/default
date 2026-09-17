@@ -65,10 +65,6 @@
   figure svg { display: block; max-width: 100%; height: auto; margin: 0 auto; color: var(--ink); font-family: var(--mono); }
   figcaption { font-size: 14px; color: var(--muted); margin-top: 10px; max-width: 70ch; }
   figcaption b { color: var(--ink); font-weight: 600; }
-  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px 24px; }
-  .kv { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; font-size: 15px; max-width: 68ch; }
-  .kv dt { font-family: var(--mono); color: var(--muted); }
-  .kv dd { margin: 0; }
   .tag { display: inline-block; font-family: var(--mono); font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; padding: 1px 6px; border: 1px solid var(--warn); color: var(--warn); border-radius: 3px; vertical-align: middle; }
   .check { list-style: none; padding-left: 0; }
   .check li { padding-left: 28px; position: relative; }
@@ -79,395 +75,338 @@
 
 <div class="page">
 <header class="masthead">
-  <p class="eyebrow">Shelving plan · drawn from 5 photos · Sept 2026</p>
+  <p class="eyebrow">Shelving plan · measured 16 Sept 2026 · revision 2</p>
   <h1>Toy Closet Build Plan</h1>
-  <p class="lede">Fixed ¾" plywood shelving on three walls, every shelf on the same 15-inch lines, sized around one bin footprint so any bin fits any bay. The floor under the back wall stays open for the generator and the vacuum, right at the outlet.</p>
-  <p class="lede">Dimensions marked <span class="tag">verify</span> are read off the photos using the 96" ceiling as the scale. Measure them before cutting anything; the plan is built so small differences only change cut lengths, not the design.</p>
+  <p class="lede">One wall-hung plywood unit runs the full 87 3/8" of the back wall in three bays: the generator on the floor at the left, five tiers of toy and supply bins in the middle, and a floor-to-ceiling utility bay at the right where the laundry chase makes the floor unusable anyway.</p>
+  <p class="lede">Every dimension below is yours, measured on site. The only figures still open are your vacuum's height and the stud spacing.</p>
 </header>
 
-<h2>What the photos say</h2>
-<p>Orientation used throughout: you stand in the doorway facing into the closet. The door is on the <b>left long wall</b> at the front end. The <b>right long wall</b> carries the soffit. The <b>back wall</b> has the outlet low in its left corner and the junction-box opening high in the same corner. The laundry bump-out sits against the <b>front wall</b>, beside the door.</p>
+<h2>The closet, as measured</h2>
+<p>Orientation throughout: you stand in the door opening facing into the closet. The <b>back wall</b> is the long wall in front of you. The <b>front wall</b> is the one the door is cut into, behind you. Left and right are your left and right.</p>
 <div class="tablewrap">
 <table>
-  <tr><th>Item</th><th class="n">Value</th><th>Source</th></tr>
-  <tr><td>Ceiling height</td><td class="n">96"</td><td>Given</td></tr>
-  <tr><td>Closet width (left wall to right wall)</td><td class="n">≈ 38"</td><td>Back wall proportion in photo 2 <span class="tag">verify</span></td></tr>
-  <tr><td>Closet length (front wall to back wall)</td><td class="n">≈ 90"</td><td>Right-wall photo 1, wide lens <span class="tag">verify</span></td></tr>
-  <tr><td>Soffit underside, right wall</td><td class="n">≈ 72"</td><td>Photo 1 <span class="tag">verify</span></td></tr>
-  <tr><td>Soffit projection from right wall</td><td class="n">≈ 12"</td><td>Photos 2 and 3 <span class="tag">verify</span></td></tr>
-  <tr><td>Soffit length</td><td class="n">≈ 66"</td><td>Ends about 2' short of the front wall (photo 1) <span class="tag">verify</span></td></tr>
-  <tr><td>Laundry bump-out</td><td class="n">≈ 24" W × 16" D × 42" H</td><td>Photos 4 and 5 <span class="tag">verify</span></td></tr>
-  <tr><td>Outlet (not yet installed)</td><td class="n">≈ 12" AFF</td><td>Bottom-left of back wall, photo 2</td></tr>
-  <tr><td>Junction-box opening</td><td class="n">≈ 78–88" AFF</td><td>Top-left of back wall, in a small boxed bump <span class="tag">verify</span></td></tr>
-  <tr><td>Door rough opening</td><td class="n">≈ 32"</td><td>Left wall, front end; short pier between door and front wall</td></tr>
+  <tr><th>Item</th><th class="n">Measured</th><th>Notes</th></tr>
+  <tr><td>Back wall, floor level</td><td class="n">87 3/8"</td><td>The long dimension. This is a wide, shallow closet.</td></tr>
+  <tr><td>Depth, both end walls</td><td class="n">36 1/2"</td><td>Matching at left and right, so the room is square.</td></tr>
+  <tr><td>Ceiling</td><td class="n">96"</td><td>Measure again after the floating floor goes down.</td></tr>
+  <tr><td>Soffit, back wall</td><td class="n">62 1/8" W × 20" H × 6" D</td><td>Starts at the left end. Underside at 76". Right end lands at 62 1/8".</td></tr>
+  <tr><td>Electrical box surround</td><td class="n">15 1/4" W × 14 3/8" H × 1 1/4" D</td><td>Left end of the soffit. Junction boxes must stay reachable.</td></tr>
+  <tr><td>Door rough opening</td><td class="n">32"</td><td>In the front wall, 23 1/2" in from the left end.</td></tr>
+  <tr><td>Wall left of the door</td><td class="n">23 1/2"</td><td>Front wall, left of the opening.</td></tr>
+  <tr><td>Wall right of the door</td><td class="n">14 3/8"</td><td>Front wall, between the opening and the laundry chase.</td></tr>
+  <tr><td>Laundry chase</td><td class="n">17 1/8" W × 22" D × 40 7/8" H</td><td>Front-right corner, against the right end wall.</td></tr>
+  <tr><td>Gap, chase to back wall</td><td class="n">14 7/8"</td><td>This is what limits the right end of the unit to 14" deep.</td></tr>
 </table>
 </div>
+<p>Two checks confirm the layout closes. Across the front wall, 23 1/2" plus the 32" opening plus 14 3/8" plus the 17 1/8" chase comes to 87", within 3/8" of the measured 87 3/8". Front to back, the chase projects 22" and leaves 14 7/8", which adds to 36 7/8" against the measured 36 1/2".</p>
 
-<h2>The concept</h2>
-<p>Three walls get shelves. The left wall stays the aisle wall and gets hooks only. Everything is set out on <b>15-inch lines</b> (shelf tops at 15, 30, 45, 60 and 75 inches), which gives 14¼" clear per tier: enough for an 11"-tall bin with fingers to spare, or two 5½" bins stacked. One set of cleat heights goes around the whole room, so it is a fast, forgiving build.</p>
+<h2>What the shape dictates</h2>
+<p>At 36 1/2" deep this is a step-in closet, not a walk-in. The whole design follows from three consequences of that.</p>
 <ul>
-  <li><b>Right wall</b> is the workhorse: a 66"-long, 15"-deep unit with two bays and four shelves under the soffit. Kids' bins live below 45"; adult-reach bins above.</li>
-  <li><b>Back wall</b> gets three deep shelves (24") spanning the full width, starting at 45". Below them the floor is reserved for the 24" generator on a dolly and the vacuum, both plugged into the outlet.</li>
-  <li><b>Front wall</b> gets two shelves above the bump-out, and the bump-out top becomes a 42"-high landing shelf.</li>
-  <li><b>Aisle</b> stays 23" wide and 50" long past the door, so an adult can stand in front of any bay and pull a bin out with two hands.</li>
+  <li><b>All the storage goes on the back wall.</b> It is 87 3/8" of uninterrupted wall, which is more than the old plan got from three walls combined. Shelves 16" deep leave 20 1/2" of standing room, which is enough to step in, turn, and pull a bin with both hands.</li>
+  <li><b>The right end is a pocket.</b> The laundry chase projects 22" and leaves a 14 7/8" slot in front of the back wall's right 17 1/8". Nothing wide gets in or out of there, so it becomes the broom-and-vacuum bay, where things stand on the floor and nothing needs reaching around.</li>
+  <li><b>The soffit sets the ceiling for two thirds of the wall.</b> Its underside is at 76" and its right edge lands at 62 1/8". That edge becomes a structural division: the bays under it stop at 74 1/4", the bay past it runs to the ceiling.</li>
 </ul>
 
 <figure>
 <div class="draw">
-<svg viewBox="0 0 520 470" role="img" aria-label="Plan view: shelving on the right, back and front walls, left wall kept as the aisle with the door, generator and vacuum under the back wall shelves, laundry bump-out in the front-left corner." xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 570 320" role="img" aria-label="Plan view of the closet: an 87 inch back wall carrying a 16 inch deep unit in three bays, the generator on the floor at the left, the laundry chase filling the front-right corner and leaving a 14 inch pocket at the right end." xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
-    <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="var(--wood-edge)" stroke-width="1"/></pattern>
+    <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
+    <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--accent)"/></marker>
   </defs>
   <!-- walls -->
-  <rect x="130" y="30" width="172" height="380" fill="var(--wall)"/>
-  <rect x="140" y="40" width="152" height="360" fill="var(--floor)"/>
-  <!-- door opening on left wall -->
-  <rect x="128" y="200" width="14" height="128" fill="var(--floor)"/>
-  <line x1="140" y1="328" x2="20" y2="328" stroke="currentColor" stroke-width="2"/>
-  <path d="M140,200 A128,128 0 0 0 20,328" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3"/>
-  <text x="18" y="214" font-size="11" fill="currentColor">door 32"</text>
-  <text x="18" y="228" font-size="11" fill="currentColor">swings out</text>
-  <line x1="150" y1="264" x2="176" y2="264" stroke="currentColor" stroke-width="1.5" marker-end="url(#arr)"/>
-  <text x="152" y="258" font-size="10" fill="currentColor">facing in</text>
-  <!-- soffit above right wall -->
-  <rect x="244" y="40" width="48" height="264" fill="none" stroke="var(--muted)" stroke-width="1" stroke-dasharray="3 3"/>
-  <!-- back wall shelves (overhead) -->
-  <rect x="140" y="40" width="152" height="96" fill="var(--wood)" fill-opacity="0.55" stroke="var(--wood-edge)" stroke-width="1.5" stroke-dasharray="6 3"/>
-  <!-- generator under -->
-  <rect x="196" y="44" width="92" height="88" fill="var(--gen)" stroke="currentColor" stroke-width="1"/>
-  <text x="242" y="84" font-size="11" text-anchor="middle" fill="currentColor">generator</text>
-  <text x="242" y="97" font-size="10" text-anchor="middle" fill="currentColor">24" cube</text>
-  <!-- vac slot -->
-  <rect x="146" y="46" width="44" height="40" fill="var(--surface)" stroke="currentColor" stroke-width="1" stroke-dasharray="2 2"/>
-  <text x="168" y="70" font-size="10" text-anchor="middle" fill="currentColor">vacuum</text>
+  <rect x="50" y="30" width="457" height="202" fill="var(--wall)"/>
+  <rect x="60" y="40" width="437" height="182" fill="var(--floor)"/>
+  <!-- door opening -->
+  <rect x="177" y="222" width="161" height="10" fill="var(--floor)"/>
+  <path d="M177,232 A160,160 0 0 0 337,292" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3"/>
+  <line x1="177" y1="232" x2="177" y2="292" stroke="currentColor" stroke-width="2"/>
+  <text x="262" y="252" font-size="11" text-anchor="middle" fill="currentColor">door, 32" rough opening</text>
+  <text x="257" y="266" font-size="10" text-anchor="middle" fill="var(--muted)">swing out into the room</text>
+  <!-- soffit above, dashed -->
+  <rect x="60" y="40" width="311" height="30" fill="none" stroke="var(--muted)" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="300" y="59" font-size="10" text-anchor="start" fill="var(--muted)">soffit above, 6" deep</text>
+  <!-- unit bays A and B, 16 deep -->
+  <rect x="60" y="40" width="314" height="80" fill="var(--wood)" fill-opacity="0.45" stroke="var(--wood-edge)" stroke-width="1.5"/>
+  <!-- bay C, 14 deep -->
+  <rect x="374" y="40" width="123" height="70" fill="var(--wood)" fill-opacity="0.45" stroke="var(--wood-edge)" stroke-width="1.5"/>
+  <!-- verticals -->
+  <rect x="197" y="40" width="4" height="80" fill="var(--wood-edge)"/>
+  <rect x="370" y="40" width="4" height="80" fill="var(--wood-edge)"/>
+  <!-- generator -->
+  <rect x="68" y="40" width="120" height="120" fill="var(--gen)" stroke="currentColor" stroke-width="1"/>
+  <text x="128" y="96" font-size="11" text-anchor="middle" fill="currentColor">generator</text>
+  <text x="128" y="110" font-size="10" text-anchor="middle" fill="currentColor">24" cube</text>
+  <text x="128" y="124" font-size="10" text-anchor="middle" fill="currentColor">on a dolly</text>
+  <text x="128" y="144" font-size="9" text-anchor="middle" fill="var(--muted)">sticks out 8"</text>
   <!-- outlet -->
-  <rect x="146" y="34" width="10" height="6" fill="var(--warn)"/>
-  <text x="124" y="40" font-size="10" text-anchor="end" fill="var(--warn)">outlet</text>
-  <line x1="126" y1="37" x2="146" y2="37" stroke="var(--warn)" stroke-width="1"/>
-  
-  <!-- right wall unit -->
-  <rect x="232" y="136" width="60" height="264" fill="url(#hatch)" stroke="var(--wood-edge)" stroke-width="1.5"/>
-  <rect x="232" y="136" width="60" height="264" fill="var(--wood)" fill-opacity="0.35"/>
-  <line x1="232" y1="268" x2="292" y2="268" stroke="var(--wood-edge)" stroke-width="2"/>
-  <text transform="translate(258,268) rotate(-90)" font-size="11" text-anchor="middle" fill="currentColor" font-weight="500">right wall unit · 15" deep · 66" long</text>
-  <text transform="translate(272,268) rotate(-90)" font-size="10" text-anchor="middle" fill="currentColor">shelves 15 · 30 · 45 · 60 · two bays</text>
-  <!-- bump-out -->
-  <rect x="140" y="336" width="92" height="64" fill="var(--wall)" fill-opacity="0.35" stroke="currentColor" stroke-width="1"/>
-  <text x="186" y="360" font-size="10" text-anchor="middle" fill="currentColor">laundry bump-out</text>
-  <text x="186" y="372" font-size="10" text-anchor="middle" fill="currentColor">≈ 24 × 16 · 42" tall</text>
-  <text x="186" y="388" font-size="10" text-anchor="middle" fill="var(--wood-edge)">shelves above at 60 · 75</text>
-  <!-- hooks on left wall -->
-  <g fill="currentColor"><circle cx="144" cy="60" r="2.5"/><circle cx="144" cy="84" r="2.5"/><circle cx="144" cy="108" r="2.5"/><circle cx="144" cy="132" r="2.5"/></g>
-  <text x="110" y="100" font-size="10" text-anchor="end" fill="currentColor">hooks +</text>
-  <text x="110" y="112" font-size="10" text-anchor="end" fill="currentColor">vac dock</text>
-  <!-- light -->
-  <circle cx="200" cy="220" r="7" fill="none" stroke="var(--muted)" stroke-width="1"/>
-  <line x1="195" y1="215" x2="205" y2="225" stroke="var(--muted)" stroke-width="1"/><line x1="205" y1="215" x2="195" y2="225" stroke="var(--muted)" stroke-width="1"/>
-  <!-- aisle dims -->
-  <line x1="140" y1="300" x2="232" y2="300" stroke="var(--accent)" stroke-width="1.2" marker-start="url(#arr)" marker-end="url(#arr)"/>
-  <text x="186" y="314" font-size="11" text-anchor="middle" fill="var(--accent)" font-weight="500">aisle 23"</text>
-  <line x1="186" y1="140" x2="186" y2="332" stroke="var(--accent)" stroke-width="1.2" marker-start="url(#arr)" marker-end="url(#arr)"/>
-  <text x="196" y="200" font-size="11" fill="var(--accent)" font-weight="500">50"</text>
+  <rect x="96" y="34" width="12" height="6" fill="var(--warn)"/>
+  <text x="126" y="36" font-size="10" text-anchor="start" fill="var(--warn)">outlet</text>
+  <!-- vacuum + broom in bay C -->
+  <rect x="392" y="48" width="30" height="30" rx="4" fill="var(--surface)" stroke="currentColor" stroke-width="1"/>
+  <circle cx="440" cy="60" r="7" fill="none" stroke="currentColor" stroke-width="1"/>
+  <rect x="462" y="48" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1"/>
+  <text x="435" y="126" font-size="10" text-anchor="middle" fill="currentColor">vacuum · broom · stool</text>
+  <!-- laundry chase -->
+  <rect x="411" y="112" width="86" height="110" fill="var(--wall)" fill-opacity="0.35" stroke="currentColor" stroke-width="1"/>
+  <text x="454" y="154" font-size="10" text-anchor="middle" fill="currentColor">laundry</text>
+  <text x="454" y="167" font-size="10" text-anchor="middle" fill="currentColor">chase</text>
+  <text x="454" y="184" font-size="9" text-anchor="middle" fill="var(--muted)">17 1/8 × 22</text>
+  <text x="454" y="196" font-size="9" text-anchor="middle" fill="var(--muted)">40 7/8 tall</text>
+  <!-- left tower, phase 2 -->
+  <rect x="60" y="120" width="60" height="102" fill="none" stroke="var(--wood-edge)" stroke-width="1.2" stroke-dasharray="5 3"/>
+  <text x="90" y="186" font-size="9" text-anchor="middle" fill="var(--wood-edge)">tower</text>
+  <text x="90" y="198" font-size="9" text-anchor="middle" fill="var(--wood-edge)">phase 2, 12"</text>
+  <!-- pocket dim -->
+  <line x1="516" y1="40" x2="516" y2="110" stroke="var(--accent)" stroke-width="1.2" marker-start="url(#a2)" marker-end="url(#a2)"/>
+  <text x="524" y="78" font-size="10" fill="var(--accent)">14"</text>
+  <line x1="516" y1="112" x2="516" y2="222" stroke="var(--accent)" stroke-width="1.2" marker-start="url(#a2)" marker-end="url(#a2)"/>
+  <text x="524" y="170" font-size="10" fill="var(--accent)">22"</text>
+  <!-- aisle -->
+  <line x1="290" y1="120" x2="290" y2="222" stroke="var(--accent)" stroke-width="1.2" marker-start="url(#a2)" marker-end="url(#a2)"/>
+  <text x="298" y="170" font-size="11" fill="var(--accent)" font-weight="500">20 1/2"</text>
+  <text x="298" y="184" font-size="10" fill="var(--accent)">standing room</text>
   <!-- overall dims -->
-  <line x1="140" y1="16" x2="292" y2="16" stroke="currentColor" stroke-width="1" marker-start="url(#arr)" marker-end="url(#arr)"/>
-  <text x="216" y="12" font-size="11" text-anchor="middle" fill="currentColor">≈ 38" verify</text>
-  <line x1="320" y1="40" x2="320" y2="400" stroke="currentColor" stroke-width="1" marker-start="url(#arr)" marker-end="url(#arr)"/>
-  <text transform="translate(334,220) rotate(90)" font-size="11" text-anchor="middle" fill="currentColor">≈ 90" verify</text>
-  <text x="330" y="60" font-size="10" fill="var(--muted)">dashed = soffit above</text>
-  <text x="330" y="96" font-size="10" fill="var(--wood-edge)">back-wall shelves</text>
-  <text x="330" y="108" font-size="10" fill="var(--wood-edge)">24" deep · 45 · 60 · 75</text>
-  <text x="330" y="120" font-size="10" fill="var(--wood-edge)">(75 stops at the soffit)</text>
-  <text x="330" y="150" font-size="10" fill="var(--muted)">BACK WALL ↑</text>
-  <text x="330" y="440" font-size="10" fill="var(--muted)">FRONT WALL ↓</text>
-  <text x="216" y="430" font-size="10" text-anchor="middle" fill="var(--muted)">front wall</text>
-  <text x="216" y="455" font-size="10" text-anchor="middle" fill="var(--muted)">scale: 4 px per inch</text>
+  <line x1="60" y1="16" x2="497" y2="16" stroke="currentColor" stroke-width="1" marker-start="url(#a1)" marker-end="url(#a1)"/>
+  <text x="330" y="12" font-size="11" text-anchor="middle" fill="currentColor">87 3/8"</text>
+  <line x1="36" y1="40" x2="36" y2="222" stroke="currentColor" stroke-width="1" marker-start="url(#a1)" marker-end="url(#a1)"/>
+  <text transform="translate(24,131) rotate(-90)" font-size="11" text-anchor="middle" fill="currentColor">36 1/2"</text>
+  <text x="60" y="298" font-size="10" fill="var(--muted)">LEFT WALL</text>
+  <text x="497" y="298" font-size="10" text-anchor="end" fill="var(--muted)">RIGHT WALL</text>
+  <text x="330" y="312" font-size="10" text-anchor="middle" fill="var(--muted)">scale 5 px per inch · back wall at top</text>
 </svg>
 </div>
-<figcaption><b>Plan view.</b> The left wall stays open as the aisle. Shelving wraps the other three walls, meeting at the corners. The back-wall shelves float 45" up, so the generator and vacuum sit under them at the outlet.</figcaption>
+<figcaption><b>Plan view.</b> The unit is 16" deep across bays A and B and steps back to 14" for bay C, which is all the 14 7/8" pocket behind the laundry chase will take. The generator protrudes 8" past the shelf face into its own bay, clear of the door swing.</figcaption>
 </figure>
 
-<h2>Wall by wall</h2>
+<h2>The back wall unit</h2>
+<p>One unit, 87 3/8" long, three bays, split on the soffit's right edge so no shelf has to be notched. The whole thing hangs from cleats screwed into studs. Nothing is fastened through the floor, so the floating floor stays free to move.</p>
 
-<h3>Right wall: the main unit</h3>
-<p>A 66"-long, 15"-deep unit from the floor to the underside of the soffit. Three ¾" plywood verticals (two ends, one in the middle) make two bays about 32" wide. Four shelves sit on 1×3 cleats screwed to studs and are also screwed through the verticals, so the load goes into the wall at the back and into the verticals at the front. The verticals stand on the finished floor but are never fastened to it.</p>
-<p>Five tiers, bottom to top: the floor tier and the 15–30 tier take the heaviest toy bins the kids drag out. The 30–45 tier is the daily art and school supply tier at kid height. Above 45" is adult reach: overflow, and the short tier under the soffit for flat or half-height bins.</p>
+<div class="tablewrap">
+<table>
+  <tr><th>Bay</th><th class="n">Position</th><th class="n">Clear width</th><th class="n">Depth</th><th class="n">Top</th><th>Job</th></tr>
+  <tr><td>A</td><td class="n">0 → 27 1/2</td><td class="n">27 1/2"</td><td class="n">16"</td><td class="n">74 1/4"</td><td>Generator on the floor. Three bin tiers above.</td></tr>
+  <tr><td>B</td><td class="n">28 1/4 → 62 1/8</td><td class="n">33 7/8"</td><td class="n">16"</td><td class="n">74 1/4"</td><td>The main bin wall. Five tiers, three bins each.</td></tr>
+  <tr><td>C</td><td class="n">62 7/8 → 87 3/8</td><td class="n">24 1/2"</td><td class="n">14"</td><td class="n">96"</td><td>Vacuum, broom, step stool standing on the floor. One high shelf.</td></tr>
+</table>
+</div>
+<p>The two dividers are 3/4" plywood. The one at 27 1/2" runs floor to 75". The one at 62 1/8" runs floor to ceiling and lands exactly on the soffit's right edge, which is what lets bay C go full height without any notching.</p>
 
 <figure>
 <div class="draw">
-<svg viewBox="0 0 570 440" role="img" aria-label="Right wall elevation: soffit at 72 inches, a two-bay plywood unit with shelves at 15, 30, 45 and 60 inches, the back-wall shelves seen in section on the left with the generator underneath." xmlns="http://www.w3.org/2000/svg">
-  <defs><marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<svg viewBox="0 0 580 570" role="img" aria-label="Back wall elevation: generator in the left bay below shelves at 30, 45, 60 and 74 inches, a five tier bin bay in the middle stopping at the soffit, and a full height utility bay at the right holding the vacuum with one shelf at 72 inches." xmlns="http://www.w3.org/2000/svg">
   <!-- ruler -->
-  <line x1="44" y1="16" x2="44" y2="400" stroke="currentColor" stroke-width="1"/>
+  <line x1="46" y1="20" x2="46" y2="500" stroke="currentColor" stroke-width="1"/>
   <g font-size="10" fill="currentColor" text-anchor="end">
-    <line x1="40" y1="400" x2="48" y2="400" stroke="currentColor"/><text x="36" y="404">0</text>
-    <line x1="40" y1="340" x2="48" y2="340" stroke="currentColor"/><text x="36" y="344">15</text>
-    <line x1="40" y1="280" x2="48" y2="280" stroke="currentColor"/><text x="36" y="284">30</text>
-    <line x1="40" y1="220" x2="48" y2="220" stroke="currentColor"/><text x="36" y="224">45</text>
-    <line x1="40" y1="160" x2="48" y2="160" stroke="currentColor"/><text x="36" y="164">60</text>
-    <line x1="40" y1="112" x2="48" y2="112" stroke="currentColor"/><text x="36" y="116">72</text>
-    <line x1="40" y1="16" x2="48" y2="16" stroke="currentColor"/><text x="36" y="20">96</text>
+    <line x1="42" y1="500" x2="50" y2="500" stroke="currentColor"/><text x="38" y="504">0</text>
+    <line x1="42" y1="425" x2="50" y2="425" stroke="currentColor"/><text x="38" y="429">15</text>
+    <line x1="42" y1="350" x2="50" y2="350" stroke="currentColor"/><text x="38" y="354">30</text>
+    <line x1="42" y1="275" x2="50" y2="275" stroke="currentColor"/><text x="38" y="279">45</text>
+    <line x1="42" y1="200" x2="50" y2="200" stroke="currentColor"/><text x="38" y="204">60</text>
+    <line x1="42" y1="140" x2="50" y2="140" stroke="currentColor"/><text x="38" y="144">72</text>
+    <line x1="42" y1="120" x2="50" y2="120" stroke="currentColor"/><text x="38" y="124">76</text>
+    <line x1="42" y1="20" x2="50" y2="20" stroke="currentColor"/><text x="38" y="24">96</text>
   </g>
-  <!-- ceiling / floor -->
-  <line x1="64" y1="16" x2="424" y2="16" stroke="currentColor" stroke-width="2"/>
-  <line x1="64" y1="400" x2="424" y2="400" stroke="currentColor" stroke-width="2"/>
-  <line x1="64" y1="16" x2="64" y2="400" stroke="currentColor" stroke-width="1"/>
-  <line x1="424" y1="16" x2="424" y2="400" stroke="currentColor" stroke-width="1"/>
+  <!-- room outline -->
+  <line x1="70" y1="20" x2="507" y2="20" stroke="currentColor" stroke-width="2"/>
+  <line x1="70" y1="500" x2="507" y2="500" stroke="currentColor" stroke-width="2"/>
+  <line x1="70" y1="20" x2="70" y2="500" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="507" y1="20" x2="507" y2="500" stroke="currentColor" stroke-width="1.5"/>
   <!-- soffit -->
-  <rect x="64" y="16" width="264" height="96" fill="var(--wall)" fill-opacity="0.25" stroke="currentColor" stroke-width="1"/>
-  <text x="196" y="60" font-size="11" text-anchor="middle" fill="currentColor">soffit · underside ≈ 72" · verify</text>
-  <text x="196" y="74" font-size="10" text-anchor="middle" fill="var(--muted)">ends ≈ 24" short of front wall</text>
-  <!-- back wall unit in section -->
-  <rect x="64" y="292" width="96" height="96" fill="var(--gen)" stroke="currentColor" stroke-width="1"/>
-  <rect x="64" y="388" width="96" height="12" fill="none" stroke="currentColor" stroke-width="1"/>
-  <text x="112" y="336" font-size="10" text-anchor="middle" fill="currentColor">generator</text>
-  <text x="112" y="349" font-size="10" text-anchor="middle" fill="currentColor">24" cube</text>
-  <text x="112" y="397" font-size="8" text-anchor="middle" fill="currentColor">dolly</text>
+  <rect x="70" y="20" width="311" height="100" fill="var(--wall)" fill-opacity="0.25" stroke="currentColor" stroke-width="1"/>
+  <text x="290" y="60" font-size="11" text-anchor="middle" fill="currentColor">soffit · 62 1/8" × 20" × 6" deep</text>
+  <text x="290" y="76" font-size="10" text-anchor="middle" fill="var(--muted)">underside 76"</text>
+  <text x="290" y="92" font-size="10" text-anchor="middle" fill="var(--muted)">open in front of it to the ceiling</text>
+  <!-- electrical box -->
+  <rect x="78" y="30" width="76" height="72" fill="var(--wall)" fill-opacity="0.7" stroke="currentColor" stroke-width="1"/>
+  <text x="116" y="62" font-size="9" text-anchor="middle" fill="var(--ink)">junction</text>
+  <text x="116" y="74" font-size="9" text-anchor="middle" fill="var(--ink)">boxes</text>
+  <!-- verticals -->
+  <rect x="207" y="125" width="4" height="375" fill="var(--wood)" stroke="var(--wood-edge)" stroke-width="1"/>
+  <rect x="380" y="20" width="4" height="480" fill="var(--wood)" stroke="var(--wood-edge)" stroke-width="1"/>
+  <!-- shelves bay A -->
   <g fill="var(--wood)" stroke="var(--wood-edge)" stroke-width="1">
-    <rect x="64" y="220" width="96" height="3"/><rect x="64" y="160" width="96" height="3"/>
-  </g>
-  <text x="112" y="248" font-size="10" text-anchor="middle" fill="var(--wood-edge)">back-wall</text>
-  <text x="112" y="260" font-size="10" text-anchor="middle" fill="var(--wood-edge)">shelves</text>
-  <text x="112" y="272" font-size="10" text-anchor="middle" fill="var(--wood-edge)">(section)</text>
-  <!-- right wall unit -->
-  <g fill="var(--wood)" stroke="var(--wood-edge)" stroke-width="1">
-    <rect x="160" y="112" width="3" height="288"/><rect x="290" y="112" width="3" height="288"/><rect x="421" y="112" width="3" height="288"/>
-    <rect x="160" y="340" width="264" height="3"/><rect x="160" y="280" width="264" height="3"/><rect x="160" y="220" width="264" height="3"/><rect x="160" y="160" width="264" height="3"/>
-  </g>
-  <!-- bins: bay 1 x 163-290, bay 2 x 293-421 -->
-  <g fill="var(--bin)" stroke="var(--bin-edge)" stroke-width="1" rx="2">
-    <!-- floor tier -->
-    <rect x="175" y="356" width="44" height="44" rx="2"/><rect x="227" y="356" width="44" height="44" rx="2"/>
-    <rect x="305" y="356" width="44" height="44" rx="2"/><rect x="357" y="356" width="44" height="44" rx="2"/>
-    <!-- 15-30 -->
-    <rect x="175" y="296" width="44" height="44" rx="2"/><rect x="227" y="296" width="44" height="44" rx="2"/>
-    <rect x="305" y="296" width="44" height="44" rx="2"/><rect x="357" y="296" width="44" height="44" rx="2"/>
-    <!-- 30-45 -->
-    <rect x="175" y="236" width="44" height="44" rx="2"/><rect x="227" y="236" width="44" height="44" rx="2"/>
-    <rect x="305" y="236" width="44" height="44" rx="2"/><rect x="357" y="236" width="44" height="44" rx="2"/>
-    <!-- 45-60 -->
-    <rect x="175" y="176" width="44" height="44" rx="2"/><rect x="227" y="176" width="44" height="44" rx="2"/>
-    <rect x="305" y="176" width="44" height="44" rx="2"/><rect x="357" y="176" width="44" height="44" rx="2"/>
-    <!-- 60-72 half-height stacked -->
-    <rect x="175" y="138" width="44" height="22" rx="2"/><rect x="175" y="116" width="44" height="22" rx="2"/>
-    <rect x="227" y="138" width="44" height="22" rx="2"/><rect x="227" y="116" width="44" height="22" rx="2"/>
-    <rect x="305" y="138" width="44" height="22" rx="2"/><rect x="305" y="116" width="44" height="22" rx="2"/>
-    <rect x="357" y="138" width="44" height="22" rx="2"/><rect x="357" y="116" width="44" height="22" rx="2"/>
-  </g>
-  <!-- tier labels -->
-  <g font-size="10" fill="currentColor">
-    <text x="434" y="374">heavy toy bins</text><text x="434" y="386" fill="var(--muted)">kids drag out</text>
-    <text x="434" y="314">toys</text>
-    <text x="434" y="254">art + school</text><text x="434" y="266" fill="var(--muted)">daily, kid height</text>
-    <text x="434" y="194">overflow</text><text x="434" y="206" fill="var(--muted)">adult reach</text>
-    <text x="434" y="134">flat / half bins</text><text x="434" y="146" fill="var(--muted)">12" clear</text>
-  </g>
-  <!-- bay labels -->
-  <line x1="163" y1="426" x2="290" y2="426" stroke="var(--accent)" stroke-width="1" marker-start="url(#arr2)" marker-end="url(#arr2)"/>
-  <text x="226" y="420" font-size="10" text-anchor="middle" fill="var(--accent)">bay ≈ 32"</text>
-  <line x1="293" y1="426" x2="421" y2="426" stroke="var(--accent)" stroke-width="1" marker-start="url(#arr2)" marker-end="url(#arr2)"/>
-  <text x="357" y="420" font-size="10" text-anchor="middle" fill="var(--accent)">bay ≈ 32"</text>
-  <text x="64" y="436" font-size="10" fill="var(--muted)">back wall</text>
-  <text x="424" y="436" font-size="10" text-anchor="end" fill="var(--muted)">front wall</text>
-</svg>
-</div>
-<figcaption><b>Right wall, seen from the aisle.</b> Shelf tops at 15, 30, 45 and 60 inches; verticals at the ends and mid-span. Each tier takes two 11"×15¼" bins per bay with room for a small bin beside them. The back-wall shelves show in section at the left, with the generator parked below.</figcaption>
-</figure>
-
-<h3>Back wall: deep shelves over the power corner</h3>
-<p>Three 24"-deep shelves on cleats along the back and both side walls. Cleats on three sides make a 38" span rigid enough for the heaviest bins in the closet. The first shelf top is at 45", leaving 44¼" clear below for the generator on a low dolly (24" cube plus about 3" of dolly) and the vacuum beside it. The 45 and 60 shelves span wall to wall and take two large bins each. The 75 shelf is above the soffit's underside, so it stops where the soffit begins: about 26" wide, one large bin, with its left end kept clear under the junction-box opening. That opening gets a screwed-on painted panel so it stays accessible. The top tier runs to the ceiling, 21" clear, for tall or bulky things.</p>
-
-<figure>
-<div class="draw">
-<svg viewBox="0 0 430 440" role="img" aria-label="Back wall elevation: generator and vacuum on the floor at the outlet, three deep shelves at 45, 60 and 75 inches, the top one stopping at the soffit, junction-box access panel at top left." xmlns="http://www.w3.org/2000/svg">
-  <!-- ruler -->
-  <line x1="44" y1="16" x2="44" y2="400" stroke="currentColor" stroke-width="1"/>
-  <g font-size="10" fill="currentColor" text-anchor="end">
-    <line x1="40" y1="400" x2="48" y2="400" stroke="currentColor"/><text x="36" y="404">0</text>
-    <line x1="40" y1="220" x2="48" y2="220" stroke="currentColor"/><text x="36" y="224">45</text>
-    <line x1="40" y1="160" x2="48" y2="160" stroke="currentColor"/><text x="36" y="164">60</text>
-    <line x1="40" y1="100" x2="48" y2="100" stroke="currentColor"/><text x="36" y="104">75</text>
-    <line x1="40" y1="16" x2="48" y2="16" stroke="currentColor"/><text x="36" y="20">96</text>
-  </g>
-  <!-- ceiling / floor / walls -->
-  <line x1="100" y1="16" x2="252" y2="16" stroke="currentColor" stroke-width="2"/>
-  <line x1="100" y1="400" x2="252" y2="400" stroke="currentColor" stroke-width="2"/>
-  <line x1="100" y1="16" x2="100" y2="400" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="252" y1="16" x2="252" y2="400" stroke="currentColor" stroke-width="1.5"/>
-  <!-- soffit in section, right -->
-  <rect x="204" y="16" width="48" height="96" fill="var(--wall)" fill-opacity="0.25" stroke="currentColor" stroke-width="1"/>
-  <text x="228" y="60" font-size="9" text-anchor="middle" fill="currentColor">soffit</text>
-  <text x="228" y="72" font-size="9" text-anchor="middle" fill="currentColor">≈12" out</text>
-  <!-- junction box bump + opening -->
-  <rect x="100" y="48" width="56" height="40" fill="var(--wall)" fill-opacity="0.2" stroke="currentColor" stroke-width="1"/>
-  <rect x="108" y="54" width="40" height="26" fill="var(--wall)" fill-opacity="0.9"/>
-  <text x="100" y="38" font-size="9" fill="currentColor">junction boxes → removable panel</text>
-  <!-- outlet -->
-  <rect x="106" y="346" width="10" height="12" fill="var(--warn)"/>
-  <text x="121" y="356" font-size="9" fill="var(--warn)">outlet</text>
-  <!-- shelves -->
-  <g fill="var(--wood)" stroke="var(--wood-edge)" stroke-width="1">
-    <rect x="100" y="220" width="152" height="3"/><rect x="100" y="160" width="152" height="3"/><rect x="100" y="100" width="104" height="3"/>
+    <rect x="70" y="350" width="137" height="4"/><rect x="70" y="275" width="137" height="4"/><rect x="70" y="200" width="137" height="4"/><rect x="70" y="125" width="137" height="4"/>
+    <rect x="211" y="425" width="169" height="4"/><rect x="211" y="350" width="169" height="4"/><rect x="211" y="275" width="169" height="4"/><rect x="211" y="200" width="169" height="4"/><rect x="211" y="125" width="169" height="4"/>
+    <rect x="384" y="140" width="123" height="4"/>
   </g>
   <!-- generator -->
-  <rect x="156" y="292" width="96" height="96" fill="var(--gen)" stroke="currentColor" stroke-width="1"/>
-  <rect x="156" y="388" width="96" height="12" fill="none" stroke="currentColor" stroke-width="1"/>
-  <text x="204" y="336" font-size="10" text-anchor="middle" fill="currentColor">generator</text>
-  <text x="204" y="349" font-size="10" text-anchor="middle" fill="currentColor">24 × 24 × 24</text>
-  <text x="204" y="397" font-size="8" text-anchor="middle" fill="currentColor">dolly</text>
-  <!-- vacuum -->
-  <rect x="124" y="228" width="22" height="172" rx="4" fill="var(--surface)" stroke="currentColor" stroke-width="1"/>
-  <rect x="120" y="228" width="30" height="20" rx="3" fill="var(--surface)" stroke="currentColor" stroke-width="1"/>
-  <text x="135" y="300" font-size="9" text-anchor="middle" fill="currentColor" transform="rotate(-90 135 300)">vacuum ≤ 44"</text>
-  <!-- large bins -->
+  <rect x="78" y="365" width="120" height="120" fill="var(--gen)" stroke="currentColor" stroke-width="1"/>
+  <rect x="78" y="485" width="120" height="15" fill="none" stroke="currentColor" stroke-width="1"/>
+  <text x="138" y="418" font-size="11" text-anchor="middle" fill="currentColor">generator</text>
+  <text x="138" y="432" font-size="10" text-anchor="middle" fill="currentColor">24 × 24 × 24</text>
+  <text x="138" y="496" font-size="8" text-anchor="middle" fill="currentColor">dolly</text>
+  <rect x="86" y="455" width="12" height="14" fill="var(--warn)"/>
+  <text x="104" y="466" font-size="9" fill="var(--warn)">outlet</text>
+  <!-- bins bay A -->
   <g fill="var(--bin)" stroke="var(--bin-edge)" stroke-width="1">
-    <rect x="106" y="176" width="61" height="44" rx="2"/><rect x="177" y="176" width="61" height="44" rx="2"/>
-    <rect x="106" y="116" width="61" height="44" rx="2"/><rect x="177" y="116" width="61" height="44" rx="2"/>
-    <rect x="140" y="56" width="61" height="44" rx="2"/>
+    <rect x="78" y="295" width="55" height="55" rx="2"/><rect x="136" y="295" width="55" height="55" rx="2"/>
+    <rect x="78" y="220" width="55" height="55" rx="2"/><rect x="136" y="220" width="55" height="55" rx="2"/>
+    <rect x="78" y="145" width="55" height="55" rx="2"/><rect x="136" y="145" width="55" height="55" rx="2"/>
   </g>
-  <text x="118" y="96" font-size="8" text-anchor="middle" fill="var(--bin-edge)">clear</text>
-  <!-- labels -->
-  <text x="204" y="274" font-size="10" text-anchor="middle" fill="currentColor">44¼" clear</text>
-  <text x="100" y="424" font-size="10" fill="var(--muted)">left wall</text>
-  <text x="252" y="424" font-size="10" text-anchor="end" fill="var(--muted)">right wall</text>
-  <text x="176" y="436" font-size="10" text-anchor="middle" fill="var(--muted)">≈ 38" verify</text>
+  <!-- bins bay B -->
+  <g fill="var(--bin)" stroke="var(--bin-edge)" stroke-width="1">
+    <rect x="213" y="445" width="54" height="55" rx="2"/><rect x="269" y="445" width="54" height="55" rx="2"/><rect x="325" y="445" width="54" height="55" rx="2"/>
+    <rect x="213" y="370" width="54" height="55" rx="2"/><rect x="269" y="370" width="54" height="55" rx="2"/><rect x="325" y="370" width="54" height="55" rx="2"/>
+    <rect x="213" y="295" width="54" height="55" rx="2"/><rect x="269" y="295" width="54" height="55" rx="2"/><rect x="325" y="295" width="54" height="55" rx="2"/>
+    <rect x="213" y="220" width="54" height="55" rx="2"/><rect x="269" y="220" width="54" height="55" rx="2"/><rect x="325" y="220" width="54" height="55" rx="2"/>
+    <rect x="213" y="145" width="54" height="55" rx="2"/><rect x="269" y="145" width="54" height="55" rx="2"/><rect x="325" y="145" width="54" height="55" rx="2"/>
+  </g>
+  <!-- bay C contents -->
+  <rect x="398" y="290" width="34" height="210" rx="5" fill="var(--surface)" stroke="currentColor" stroke-width="1"/>
+  <text transform="translate(415,395) rotate(-90)" font-size="10" text-anchor="middle" fill="currentColor">vacuum</text>
+  <line x1="446" y1="230" x2="446" y2="500" stroke="currentColor" stroke-width="2"/>
+  <rect x="438" y="230" width="16" height="10" fill="currentColor"/>
+  <rect x="466" y="440" width="34" height="60" fill="none" stroke="currentColor" stroke-width="1"/>
+  <text x="483" y="475" font-size="9" text-anchor="middle" fill="currentColor">stool</text>
+  <g fill="var(--bin)" stroke="var(--bin-edge)" stroke-width="1">
+    <rect x="390" y="85" width="55" height="55" rx="2"/><rect x="448" y="85" width="55" height="55" rx="2"/>
+  </g>
+  <!-- bay labels -->
+  <text x="138" y="536" font-size="11" text-anchor="middle" fill="var(--accent)" font-weight="500">BAY A · 27 1/2"</text>
+  <text x="295" y="536" font-size="11" text-anchor="middle" fill="var(--accent)" font-weight="500">BAY B · 33 7/8"</text>
+  <text x="445" y="536" font-size="11" text-anchor="middle" fill="var(--accent)" font-weight="500">BAY C · 24 1/2"</text>
+  <text x="138" y="550" font-size="10" text-anchor="middle" fill="var(--muted)">power</text>
+  <text x="295" y="550" font-size="10" text-anchor="middle" fill="var(--muted)">bins, 15 bays of them</text>
+  <text x="445" y="550" font-size="10" text-anchor="middle" fill="var(--muted)">utility, full height</text>
+  <text x="70" y="516" font-size="10" fill="var(--muted)">left end wall</text>
+  <text x="507" y="516" font-size="10" text-anchor="end" fill="var(--muted)">right end wall</text>
 </svg>
 </div>
-<figcaption><b>Back wall, facing in.</b> Power corner at floor level: generator on the right against the right wall, vacuum in the 14" slot beside the outlet. The 45 and 60 shelves take two large bins each. The 75 shelf stops at the soffit, takes one large bin, and keeps its left end clear under the junction-box panel.</figcaption>
+<figcaption><b>Back wall, seen from the door.</b> Shelf tops at 15, 30, 45, 60 and 74 1/4 inches, every tier 14 1/4" clear. Bay B's five tiers take three bins each. Bay C clears the soffit entirely, so it runs to the ceiling with one shelf at 72" above the standing tools.</figcaption>
 </figure>
-
-<h3>Front wall: over the bump-out</h3>
-<p>Cap the bump-out with a piece of ¾" plywood so its top becomes a 42"-high landing shelf beside the door: the natural spot for a charging basket, the label maker, library books, anything in transit. Above it, two shelves at 60" and 75" fill the wall between the left wall and the right-wall unit, about 23" wide. The 75" shelf runs to the ceiling with 21" clear, good for poster board, easels and wrapping paper.</p>
-<div class="note"><p>If the hole in the bump-out top is intentional (a laundry drop into the bins on the other side), leave the top open and start the front-wall shelves at 60" as drawn; the landing shelf just becomes the chute mouth. If the hole is simply unfinished, cap it.</p></div>
 
 <figure>
 <div class="draw">
-<svg viewBox="0 0 430 440" role="img" aria-label="Front wall elevation: laundry bump-out about 42 inches tall with a capped top, two shelves above it at 60 and 75 inches, right wall unit in section at the left." xmlns="http://www.w3.org/2000/svg">
-  <line x1="44" y1="16" x2="44" y2="400" stroke="currentColor" stroke-width="1"/>
+<svg viewBox="0 0 360 570" role="img" aria-label="Section through the generator bay showing the 36 and a half inch depth: a 16 inch deep unit against the back wall, the soffit 6 inches deep above 76 inches, the generator projecting 8 inches past the shelf face, and 20 and a half inches of standing room." xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--accent)"/></marker></defs>
+  <line x1="56" y1="20" x2="56" y2="500" stroke="currentColor" stroke-width="1"/>
   <g font-size="10" fill="currentColor" text-anchor="end">
-    <line x1="40" y1="400" x2="48" y2="400" stroke="currentColor"/><text x="36" y="404">0</text>
-    <line x1="40" y1="232" x2="48" y2="232" stroke="currentColor"/><text x="36" y="236">42</text>
-    <line x1="40" y1="160" x2="48" y2="160" stroke="currentColor"/><text x="36" y="164">60</text>
-    <line x1="40" y1="100" x2="48" y2="100" stroke="currentColor"/><text x="36" y="104">75</text>
-    <line x1="40" y1="16" x2="48" y2="16" stroke="currentColor"/><text x="36" y="20">96</text>
+    <line x1="52" y1="500" x2="60" y2="500" stroke="currentColor"/><text x="48" y="504">0</text>
+    <line x1="52" y1="350" x2="60" y2="350" stroke="currentColor"/><text x="48" y="354">30</text>
+    <line x1="52" y1="275" x2="60" y2="275" stroke="currentColor"/><text x="48" y="279">45</text>
+    <line x1="52" y1="200" x2="60" y2="200" stroke="currentColor"/><text x="48" y="204">60</text>
+    <line x1="52" y1="120" x2="60" y2="120" stroke="currentColor"/><text x="48" y="124">76</text>
+    <line x1="52" y1="20" x2="60" y2="20" stroke="currentColor"/><text x="48" y="24">96</text>
   </g>
-  <line x1="100" y1="16" x2="252" y2="16" stroke="currentColor" stroke-width="2"/>
-  <line x1="100" y1="400" x2="252" y2="400" stroke="currentColor" stroke-width="2"/>
-  <line x1="100" y1="16" x2="100" y2="400" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="252" y1="16" x2="252" y2="400" stroke="currentColor" stroke-width="1.5"/>
-  <!-- right unit section at left (x 100-160) -->
+  <line x1="80" y1="20" x2="262" y2="20" stroke="currentColor" stroke-width="2"/>
+  <line x1="80" y1="500" x2="262" y2="500" stroke="currentColor" stroke-width="2"/>
+  <line x1="80" y1="20" x2="80" y2="500" stroke="currentColor" stroke-width="2"/>
+  <line x1="262" y1="20" x2="262" y2="500" stroke="currentColor" stroke-width="1.5"/>
+  <!-- soffit -->
+  <rect x="80" y="20" width="30" height="100" fill="var(--wall)" fill-opacity="0.3" stroke="currentColor" stroke-width="1"/>
+  <text x="118" y="46" font-size="10" fill="currentColor">soffit, 6"</text>
+  <text x="118" y="60" font-size="9" fill="var(--muted)">10" of open space</text>
+  <text x="118" y="72" font-size="9" fill="var(--muted)">in front of it</text>
+  <!-- shelves in section, 16 deep -->
   <g fill="var(--wood)" stroke="var(--wood-edge)" stroke-width="1">
-    <rect x="100" y="112" width="60" height="3"/>
-    <rect x="100" y="340" width="60" height="3"/><rect x="100" y="280" width="60" height="3"/><rect x="100" y="220" width="60" height="3"/><rect x="100" y="160" width="60" height="3"/>
-    <rect x="157" y="112" width="3" height="288"/>
+    <rect x="80" y="350" width="80" height="4"/><rect x="80" y="275" width="80" height="4"/><rect x="80" y="200" width="80" height="4"/><rect x="80" y="125" width="80" height="4"/>
   </g>
-  <text x="130" y="250" font-size="9" text-anchor="middle" fill="var(--wood-edge)">right unit</text>
-  <text x="130" y="262" font-size="9" text-anchor="middle" fill="var(--wood-edge)">(section)</text>
-  <!-- bump-out -->
-  <rect x="160" y="232" width="92" height="168" fill="var(--wall)" fill-opacity="0.2" stroke="currentColor" stroke-width="1"/>
-  <rect x="160" y="229" width="92" height="3" fill="var(--wood)" stroke="var(--wood-edge)" stroke-width="1"/>
-  <text x="206" y="300" font-size="10" text-anchor="middle" fill="currentColor">laundry</text>
-  <text x="206" y="313" font-size="10" text-anchor="middle" fill="currentColor">bump-out</text>
-  <text x="206" y="330" font-size="9" text-anchor="middle" fill="var(--muted)">≈ 24" w · 42" h</text>
-  <text x="206" y="250" font-size="9" text-anchor="middle" fill="var(--wood-edge)">landing shelf</text>
-  <!-- shelves above -->
-  <g fill="var(--wood)" stroke="var(--wood-edge)" stroke-width="1">
-    <rect x="160" y="160" width="92" height="3"/><rect x="160" y="100" width="92" height="3"/>
-  </g>
-  <!-- bins -->
+  <!-- generator -->
+  <rect x="80" y="365" width="120" height="120" fill="var(--gen)" stroke="currentColor" stroke-width="1"/>
+  <rect x="80" y="485" width="120" height="15" fill="none" stroke="currentColor" stroke-width="1"/>
+  <text x="140" y="428" font-size="10" text-anchor="middle" fill="currentColor">generator</text>
+  <!-- bins in section -->
   <g fill="var(--bin)" stroke="var(--bin-edge)" stroke-width="1">
-    <rect x="163" y="185" width="43" height="44" rx="2"/><rect x="208" y="185" width="43" height="44" rx="2"/>
-    <rect x="163" y="116" width="43" height="44" rx="2"/><rect x="208" y="116" width="43" height="44" rx="2"/>
+    <rect x="84" y="295" width="76" height="55" rx="2"/><rect x="84" y="220" width="76" height="55" rx="2"/><rect x="84" y="145" width="76" height="55" rx="2"/>
   </g>
-  <rect x="163" y="24" width="20" height="76" rx="2" fill="none" stroke="var(--bin-edge)" stroke-width="1" stroke-dasharray="3 2"/>
-  <rect x="188" y="24" width="20" height="76" rx="2" fill="none" stroke="var(--bin-edge)" stroke-width="1" stroke-dasharray="3 2"/>
-  <text x="232" y="60" font-size="8" text-anchor="middle" fill="var(--bin-edge)">tall</text>
-  <text x="232" y="70" font-size="8" text-anchor="middle" fill="var(--bin-edge)">items</text>
-  <text x="206" y="176" font-size="9" text-anchor="middle" fill="var(--muted)">17" clear</text>
-  <text x="100" y="424" font-size="10" fill="var(--muted)">right wall</text>
-  <text x="252" y="424" font-size="10" text-anchor="end" fill="var(--muted)">left wall</text>
-  <text x="206" y="436" font-size="10" text-anchor="middle" fill="var(--muted)">shelves ≈ 23" wide, cut to fit</text>
+  <!-- dims -->
+  <line x1="80" y1="516" x2="160" y2="516" stroke="var(--accent)" stroke-width="1.2" marker-start="url(#a3)" marker-end="url(#a3)"/>
+  <text x="120" y="532" font-size="10" text-anchor="middle" fill="var(--accent)">16"</text>
+  <line x1="162" y1="516" x2="262" y2="516" stroke="var(--accent)" stroke-width="1.2" marker-start="url(#a3)" marker-end="url(#a3)"/>
+  <text x="212" y="532" font-size="10" text-anchor="middle" fill="var(--accent)">20 1/2"</text>
+  <line x1="80" y1="546" x2="262" y2="546" stroke="currentColor" stroke-width="1"/>
+  <text x="171" y="562" font-size="10" text-anchor="middle" fill="currentColor">36 1/2" total depth</text>
+  <text x="212" y="250" font-size="10" text-anchor="middle" fill="var(--muted)">standing room</text>
+  <text x="231" y="440" font-size="9" text-anchor="middle" fill="var(--muted)">12 1/2"</text>
+  <text x="84" y="14" font-size="10" fill="var(--muted)">back wall</text>
+  <text x="262" y="14" font-size="10" text-anchor="end" fill="var(--muted)">door</text>
 </svg>
 </div>
-<figcaption><b>Front wall, facing the door end from inside.</b> The right-wall unit is on your left here and the door is just around the corner to the right. Two shelves ride on the same 60 and 75 lines as the back wall, ending against the unit's front vertical.</figcaption>
+<figcaption><b>Section through bay A.</b> The depth budget, which is what this closet is short of. The generator is the only thing that breaks the 16" face, and it does so in the one bay where nobody needs to stand.</figcaption>
 </figure>
 
-<h3>Left wall: keep it clear</h3>
-<p>The 40" of wall between the door and the back corner is the aisle wall. Nothing deep goes here. Mount the stick-vacuum dock in the back corner of this wall, next to the outlet, if your vacuum is a cordless stick; a canister or upright simply parks on the floor in the slot beside the generator. Add a row of hooks at 48" for backpacks (kid height) and a second row at 66" for bags, a broom clip and the step stool the kids will need for the 45" tier.</p>
+<h2>Power</h2>
+<p>Put the receptacle inside bay A, on the back wall, 6" above the finished floor, behind where the generator sits. The generator stays plugged in and charging there, and its own outlets face the aisle when you pull it forward. If your vacuum is a cordless stick that charges on a dock, add a second receptacle in bay C at 40" above the floor, above the vacuum's body and below the 72" shelf.</p>
+<div class="note"><p>The junction boxes in the soffit surround have to stay accessible, so cover the 15 1/4" × 14 3/8" opening with a screwed-on painted panel, not caulk, tape or drywall mud. A 1/2" plywood panel in a 1×2 frame with four screws is the usual fix. It sits at 76" and up, clear of every shelf in this plan.</p></div>
 
 <h2>The bin module</h2>
-<p>The whole closet is dimensioned around one footprint: <b>11" wide × 15¼" deep</b>, in 11" and 5½" heights. Every right-wall and front-wall bay takes two of them side by side (22") with a 7¾" small bin in the leftover space. The back wall takes the large version of the same family, 15¼" × 22½", two per tier. Because every tier is 14¼" clear or more, an 11" bin fits anywhere, so the family can reshuffle bins between walls as the kids' ages change.</p>
+<p>Everything is dimensioned around one footprint: <b>15 3/8" deep × 11" wide</b>, in 11" and 5 1/2" heights. Three fit across bay B with 7/8" to spare. Two fit across bay A with room left for a small bin beside them. Because every tier is 14 1/4" clear, a tall bin fits anywhere and two short ones stack in the same slot, so bins move between bays as the kids change.</p>
 <div class="tablewrap">
 <table>
-  <tr><th>Role</th><th class="n">Footprint × height</th><th>Where</th><th class="n">Qty</th><th>IKEA SAMLA</th><th>Sterilite equivalent</th></tr>
-  <tr><td>Standard</td><td class="n">11 × 15¼ × 11"</td><td>Right wall tiers 0–60, front wall</td><td class="n">20</td><td>39×28×28 cm (6 gal)</td><td>18 qt (18 × 12 × 7") ×2 stacked</td></tr>
-  <tr><td>Half</td><td class="n">11 × 15¼ × 5½"</td><td>Right wall top tier, small parts</td><td class="n">8</td><td>39×28×14 cm (3 gal)</td><td>15 qt (16¾ × 11⅜ × 6⅞")</td></tr>
-  <tr><td>Small</td><td class="n">7¾ × 11 × 5½"</td><td>Spare space beside standard bins</td><td class="n">8</td><td>28×20×14 cm (1.3 gal)</td><td>6 qt (13⅝ × 8¼ × 4⅞")</td></tr>
-  <tr><td>Large</td><td class="n">15¼ × 22½ × 11"</td><td>Back wall, two per tier, one on top</td><td class="n">5</td><td>57×39×28 cm (12 gal)</td><td>66 qt latch (23⅝ × 16¼ × 13⅜")</td></tr>
+  <tr><th>Role</th><th class="n">Footprint</th><th class="n">Height</th><th>Where</th><th class="n">Qty</th><th>Example</th></tr>
+  <tr><td>Tall bin</td><td class="n">15 3/8 × 11"</td><td class="n">11"</td><td>Bay B tiers, bay A upper tiers</td><td class="n">21</td><td>IKEA SAMLA 22 L, 39 × 28 × 28 cm</td></tr>
+  <tr><td>Half bin</td><td class="n">15 3/8 × 11"</td><td class="n">5 1/2"</td><td>Stack two per tier for small parts</td><td class="n">12</td><td>IKEA SAMLA 11 L, 39 × 28 × 14 cm</td></tr>
+  <tr><td>Small bin</td><td class="n">11 × 7 3/4"</td><td class="n">5 1/2"</td><td>Beside the pairs in bay A</td><td class="n">6</td><td>IKEA SAMLA 5 L, 28 × 20 × 14 cm</td></tr>
 </table>
 </div>
-<p>Buy clear bins with lids for the top tiers only; the kid tiers work better lidless so a 5-year-old can see and reach in. Label the shelf edge, not the bin, with a picture plus a word. The kids then put the bin back where the picture is, and a bin can move without relabeling.</p>
+<p>Check the listed dimensions before ordering, since manufacturers change tooling. Any bin at or under 15 3/8" deep and 11" wide works. Buy lids only for the tiers above 60"; the kid tiers work better open so a five-year-old can see in and reach without lifting anything off.</p>
+<p>Label the shelf edge, not the bin, with a picture and a word. Kids then return the bin to where the picture is, and a bin can move without relabelling.</p>
 
-<h3>Suggested first fill</h3>
+<h3>What goes where</h3>
 <div class="tablewrap">
 <table>
-  <tr><th>Tier</th><th>Right wall (2 bays)</th><th>Back wall</th><th>Front wall</th></tr>
-  <tr><td class="n">floor–15</td><td>Blocks, LEGO, trains, dress-up: the heavy stuff</td><td>generator + vacuum</td><td>bump-out</td></tr>
-  <tr><td class="n">15–30</td><td>Toy sets by type: vehicles, figures, dolls</td><td>generator + vacuum</td><td>bump-out</td></tr>
-  <tr><td class="n">30–45</td><td>Art: paper, markers, paint. School: workbooks, pencils, backpack refills</td><td>generator + vacuum</td><td>landing shelf at 42"</td></tr>
-  <tr><td class="n">45–60</td><td>Puzzles, board games, craft kits (adult hands out)</td><td>Bulk toys, rotation bins, outgrown-but-kept</td><td>Bulk art paper, kits</td></tr>
-  <tr><td class="n">60–75</td><td>Half bins: batteries, cables, glue, tape, spare parts (to 72")</td><td>Seasonal, gift stash, memory boxes</td><td>Office and school overflow</td></tr>
-  <tr><td class="n">75–96</td><td>soffit</td><td>Tall and bulky, lightest things (one large bin; left end clear)</td><td>Easels, poster board, rolls</td></tr>
+  <tr><th class="n">Height</th><th>Bay A</th><th>Bay B, three bins per tier</th><th>Bay C</th></tr>
+  <tr><td class="n">floor–15</td><td>Generator, plugged in</td><td>Blocks, LEGO, trains, dress-up: the heavy things kids drag out whole</td><td rowspan="4">Vacuum, broom, mop, step stool, standing on the floor</td></tr>
+  <tr><td class="n">15–30</td><td>Generator</td><td>Toy sets by type: vehicles, figures, dolls, animals</td></tr>
+  <tr><td class="n">30–45</td><td>Art paper, paint, glue</td><td>Art supplies and school supplies, daily reach, kid height</td></tr>
+  <tr><td class="n">45–60</td><td>Puzzles and board games</td><td>Craft kits, workbooks, backpack refills</td></tr>
+  <tr><td class="n">60–74 1/4</td><td>Half bins: batteries, cables, tape, spare parts</td><td>Rotation bins, outgrown but kept, seasonal</td><td>—</td></tr>
+  <tr><td class="n">72–96</td><td>Open to the ceiling</td><td>Open to the ceiling</td><td>Shelf at 72": light bulky things, gift stash, memory boxes</td></tr>
 </table>
 </div>
+<p>The 30" to 45" band is the one the kids use every day, so it holds art and school supplies in both bays. Anything above 60" is adult reach. Keep a folding step stool in bay C and the 45" to 60" tier becomes reachable for a seven-year-old.</p>
 
 <h2>Materials and cut list</h2>
-<p>Everything comes out of three sheets of ¾" plywood plus dimensional pine. Cut lengths below assume the estimated room sizes; recut to your measured width and length. Shelves are ripped at 14¼" and get a ¾" × 1½" pine face strip glued and nailed on the front edge, which hides the ply edge and stiffens the span, for a finished depth of 15".</p>
+<p>Two sheets of 3/4" plywood build the whole back wall unit. Shelves are ripped at 15 1/4" and get a pine face strip glued and nailed to the front edge, which hides the plywood edge and stiffens the span, giving a 16" finished depth. Bay B's 33 7/8" shelves get a 1×3 face strip rather than a 1×2, because that is the longest span in the build.</p>
 <div class="tablewrap">
 <table>
   <tr><th>Part</th><th class="n">Qty</th><th class="n">Size</th><th>From</th><th>Notes</th></tr>
-  <tr><td>Right-wall verticals</td><td class="n">3</td><td class="n">15 × 71½"</td><td>Sheet 1, three 15" rips</td><td>Height = soffit underside minus ½". Middle one centered.</td></tr>
-  <tr><td>Front-wall shelves</td><td class="n">2</td><td class="n">14¼ × 23"</td><td>Sheet 1 offcuts (24½" left on each rip)</td><td>Width = closet width minus 15". Cut to fit.</td></tr>
-  <tr><td>Right-wall shelves</td><td class="n">8</td><td class="n">14¼ × 31⅞"</td><td>Sheet 2, three 14¼" rips, three per rip</td><td>Bay width = (66 − 2¼) ÷ 2. One spare piece.</td></tr>
-  <tr><td>Back-wall shelves, 45 and 60</td><td class="n">2</td><td class="n">24 × 37¾"</td><td>Sheet 3, first 24" rip</td><td>Closet width minus ¼".</td></tr>
-  <tr><td>Back-wall shelf, 75</td><td class="n">1</td><td class="n">24 × 26"</td><td>Sheet 3, second 24" rip</td><td>Closet width minus soffit projection. Its right end sits on a cleat screwed to the soffit face.</td></tr>
-  <tr><td>Bump-out cap</td><td class="n">1</td><td class="n">≈ 24 × 16"</td><td>Sheet 3, second 24" rip, beside the 26" shelf</td><td>Only if the top hole is not a chute.</td></tr>
-  <tr><td>Cleats, 1×3 pine</td><td class="n">7 × 8'</td><td class="n">≈ 49 ft</td><td></td><td>Right wall 8 × 31⅞" (one per bay per shelf); back wall 2 × 37¾" + 1 × 26" + 6 × 23"; front wall 2 × 23" + 2 × 14".</td></tr>
-  <tr><td>Face strips, 1×2 pine</td><td class="n">6 × 8'</td><td class="n">≈ 36 ft</td><td></td><td>Front edge of every shelf. Add 3 more if you face the verticals too.</td></tr>
-  <tr><td>Screws</td><td class="n"></td><td class="n"></td><td></td><td>#8 × 2½" for cleats into studs (about 60); #8 × 1¼" shelf into cleat (about 80); #8 × 2" through verticals into shelf edges (about 40); 1¼" brads and wood glue for face strips.</td></tr>
-  <tr><td>Finish</td><td class="n"></td><td class="n"></td><td></td><td>Primer + 2 coats of a scrubbable enamel, or 2 coats of water-based poly on birch. Finish before installing.</td></tr>
-  <tr><td>Hardware</td><td class="n"></td><td class="n"></td><td></td><td>Low furniture dolly (rated 300 lb) for the generator; vacuum dock; 6–8 hooks; access panel screws; edge labels.</td></tr>
+  <tr><td>Divider, bay A / B</td><td class="n">1</td><td class="n">15 1/4 × 75"</td><td>Sheet 1, rip 2</td><td>Floor to the top shelf. Stops 1/4" above the finished floor.</td></tr>
+  <tr><td>Divider, bay B / C</td><td class="n">1</td><td class="n">15 1/4 × 95 1/2"</td><td>Sheet 1, rip 1</td><td>Full height. Its left face lands on the soffit's right edge at 62 1/8".</td></tr>
+  <tr><td>Bay A shelves</td><td class="n">4</td><td class="n">15 1/4 × 27 1/2"</td><td>Sheet 1 rip 3, plus one from sheet 2</td><td>At 30, 45, 60 and 74 1/4.</td></tr>
+  <tr><td>Bay B shelves</td><td class="n">5</td><td class="n">15 1/4 × 33 7/8"</td><td>Sheet 2, rips 1–3</td><td>At 15, 30, 45, 60 and 74 1/4.</td></tr>
+  <tr><td>Bay C shelf</td><td class="n">1</td><td class="n">13 1/4 × 24 1/2"</td><td>Sheet 2 offcut</td><td>At 72. Narrower because the pocket is only 14 7/8".</td></tr>
+  <tr><td>Cleats, 1×3 pine</td><td class="n">5 × 8'</td><td class="n">≈ 31 ft</td><td></td><td>One back cleat per shelf at bay width, plus 15 1/4" side cleats on the left wall at four heights and a 13 1/4" cleat on the right wall at 72".</td></tr>
+  <tr><td>Face strips, 1×3 pine</td><td class="n">2 × 8'</td><td class="n">≈ 14 ft</td><td></td><td>Bay B shelves only.</td></tr>
+  <tr><td>Face strips, 1×2 pine</td><td class="n">2 × 8'</td><td class="n">≈ 12 ft</td><td></td><td>Bay A and bay C shelves, and the two divider front edges.</td></tr>
+  <tr><td>Screws</td><td class="n"></td><td class="n"></td><td></td><td>#8 × 2 1/2" cleats into studs, about 50; #8 × 1 1/4" shelf into cleat, about 60; #8 × 2" through dividers into shelf edges, about 30; 1 1/4" brads and glue for face strips.</td></tr>
+  <tr><td>Finish</td><td class="n"></td><td class="n"></td><td></td><td>Primer plus two coats of scrubbable enamel, or two coats of water-based poly on birch. Finish before installing.</td></tr>
+  <tr><td>Hardware</td><td class="n"></td><td class="n"></td><td></td><td>Furniture dolly rated 300 lb, vacuum dock, four hooks, access panel stock, shelf-edge labels.</td></tr>
 </table>
 </div>
-<p>Rough cost at big-box pricing: three sheets of sanded birch or "blondewood" plywood, pine, screws and finish land around $300 to $350. Bins are extra and can be bought in stages; the shelving does not care which ones you buy first as long as they fit the module.</p>
+<p>At big-box pricing this comes to roughly $260 to $300 for two sheets of sanded birch plywood, the pine, screws and finish. Bins are on top of that and can be bought a tier at a time.</p>
 
-<div class="callout"><p><b>Why fixed cleats instead of a track system?</b> Wire shelving and standards sag under bin weight and the wires catch on bin bottoms. Fixed ¾" plywood on cleats screwed into studs carries 100 lb per shelf without moving, costs less, and the 15" module removes the reason you would want adjustability.</p></div>
+<div class="callout"><p><b>Why fixed cleats rather than a track system.</b> Wire shelving and adjustable standards sag under bin weight and the wires catch on bin bottoms. Plywood on cleats screwed into studs carries 100 lb a shelf without moving, costs less, and the 15" module removes the reason you would want adjustability in the first place.</p></div>
 
 <h2>Build order</h2>
 <ol>
-  <li><b>Measure and mark.</b> Width at three heights, length, soffit underside and projection, bump-out, junction-box opening bottom edge, and stud centers on all four walls. Mark studs on painter's tape at 45" so the marks survive priming.</li>
-  <li><b>Electrical first.</b> Install the outlet. Fit a removable panel over the junction-box opening: ½" plywood or drywall in a picture-frame of 1×2, held with four screws. No caulk, no glue; code requires those boxes to stay reachable.</li>
-  <li><b>Floor next, the whole floor.</b> Lay the floating floor across the entire closet including under the shelving, with the manufacturer's expansion gap at every wall and around the bump-out. Nothing in this plan is fastened through the floor, so the floor can keep floating.</li>
-  <li><b>Cut and finish the plywood</b> outside the closet. Face-strip the shelves, sand, prime and paint. Painting in a 38"-wide closet is miserable.</li>
-  <li><b>Snap level lines</b> for cleat tops at 14¼, 29¼, 44¼, 59¼ and 74¼" (shelf top minus ¾"). Use a laser or a 4' level and check that the lines meet at the corners.</li>
-  <li><b>Right-wall unit.</b> Screw the eight bay-length cleats to studs, two screws per stud. Stand the three verticals plumb on the floor, drop each shelf onto its cleat, screw down into the cleat and through the verticals into the shelf edges. Work bottom to top.</li>
-  <li><b>Back-wall shelves.</b> Cleats on the back wall and both side walls at the 45 and 60 lines, then drop the two full-width shelves in and screw them down. The right-wall cleats sit in the back 24" of that wall, in front of the right-wall unit's rear vertical. For the 75 shelf, the right cleat goes on the soffit face instead of the wall.</li>
-  <li><b>Front wall.</b> Cap the bump-out. Cleats on the front wall and the left wall at 59¼ and 74¼, and screw the shelves' right ends into the unit's front vertical.</li>
-  <li><b>Fit-out.</b> Dolly under the generator, plug it in and confirm the display is readable from the aisle. Dock the vacuum. Hooks on the left wall. Edge labels on the kid tiers. Then the bins.</li>
+  <li><b>Mark out.</b> Snap a level line at 74 1/4" across the whole back wall and confirm it clears the soffit by 1 3/4" at both ends. Find and mark studs on painter's tape at that height. Mark the bay lines at 27 1/2, 28 1/4, 62 1/8 and 62 7/8 on the floor and the wall.</li>
+  <li><b>Electrical.</b> Set the receptacle in bay A at 6" above the finished floor, and the second one in bay C at 40" if you need it. Build the access panel for the junction-box opening now, while you can still reach it without a shelf in the way.</li>
+  <li><b>Floor.</b> Lay the floating floor across the entire closet, including under the unit, with the manufacturer's expansion gap at every wall and around the laundry chase. Nothing in this plan is fastened through it.</li>
+  <li><b>Cut and finish outside the closet.</b> Rip the sheets, cut to length, glue and nail the face strips on, sand, prime and paint. Painting a 36" deep closet with shelves already in it is miserable.</li>
+  <li><b>Cleats.</b> Snap level lines for cleat tops at 14 1/4, 29 1/4, 44 1/4, 59 1/4 and 73 1/2, plus 71 1/4 in bay C only. Two screws per stud into every cleat. Add the side cleats on the left and right end walls.</li>
+  <li><b>Dividers.</b> Stand both dividers plumb, packed up 1/4" off the floor, and tack them to the back cleats.</li>
+  <li><b>Shelves, bottom to top.</b> Drop each onto its cleat, screw down into the cleat, then screw through the dividers into the shelf edges. Check level as you go; the shelves are what hold the dividers straight.</li>
+  <li><b>Fit-out.</b> Dolly under the generator, plug it in, and check the display reads from the doorway. Stand the vacuum and broom in bay C. Hooks on the front wall right of the door and on the left face of the laundry chase, low, for backpacks. Shelf-edge labels last, once the bins have found their homes.</li>
 </ol>
 
-<h2>Verify before you cut</h2>
-<ul class="check">
-  <li>Closet width at 12", 48" and 84" AFF. Use the smallest.</li>
-  <li>Closet length from front wall to back wall at floor level and at 60".</li>
-  <li>Soffit underside height at both ends, and how far it projects from the right wall. If it projects more than 15", widen the right-wall unit to match it.</li>
-  <li>Soffit end: if it stops short of the front wall as it looks in photo 1, the front 24" of the right-wall unit can carry a fifth shelf at 75" up to the ceiling.</li>
-  <li>Bump-out width, depth and height, and whether the hole in its top is a chute.</li>
-  <li>Bottom edge of the junction-box opening. If it is lower than 76", drop the back wall's top shelf to 72".</li>
-  <li>Your vacuum's parked height. The first back-wall shelf clears 44¼". If the vacuum is taller, dock it on the left wall.</li>
-  <li>Which way the door swings. A 32" door swinging in would sweep into the right-wall unit, so it needs to swing out into the hall or be a bifold or pocket.</li>
-  <li>Stud spacing on the right wall: each 32" bay cleat needs at least two studs. With 24" spacing some cleats will only catch one; add a toggle at the other end.</li>
+<h2>Options worth considering</h2>
+<ul>
+  <li><b>Left-wall tower, phase 2.</b> The left end wall has 20 1/2" of unused depth in front of the unit. A 12" deep by 20 1/2" wide stack of six shelves at 15, 30, 45, 60, 75 and 88" fits there, out of the door's path, and takes a third sheet of plywood. Screw its outer panel to the front wall at its front edge and hang the shelves on cleats screwed to the left wall. Good for games, books and bulk paper.</li>
+  <li><b>High shelf over the soffit.</b> Above 74 1/4" there is 21 3/4" of open height across bays A and B, and the soffit only fills the back 6" of it. A 9" deep shelf at 85", carried on cleats screwed to the soffit face and to the two dividers, adds 62" of storage for light bulky things. Reachable only on a ladder, so put nothing there you need twice a year.</li>
+  <li><b>Chute lid.</b> The opening in the top of the laundry chase is a drop, so leave it open. The flat of the top around it, at 40 7/8", is the natural landing spot for pockets, chargers and library books on the way through.</li>
 </ul>
 
-<footer>Fixed shelving plan for a 38" × 90" walk-in closet, ¾" plywood on cleats, 15" module. Companion to <code>closet-shelving-plan.md</code> in the repository.</footer>
+<h2>Still to confirm</h2>
+<ul class="check">
+  <li>Your vacuum's parked height and width. Bay C gives it 24 1/2" of width and 72" of height, which covers everything short of a full-size upright with the handle locked up.</li>
+  <li>Stud spacing on the back wall. Bay B's 33 7/8" cleat needs at least two studs. At 16" on centre it catches two or three; at 24" it may catch only one, in which case add a toggle at the loose end.</li>
+  <li>Ceiling height again after the floating floor goes down. The full-height divider is cut at 95 1/2" to allow for it.</li>
+  <li>Whether the door swings out. A 32" door swinging in would sweep the generator bay.</li>
+  <li>The generator's exact footprint with its handle and any cable coil. Bay A gives 27 1/2" of width for a 24" cube.</li>
+</ul>
+
+<footer>Revision 2, built from on-site measurements taken 16 September 2026. Companion to <code>closet-shelving-plan.md</code> in the repository.</footer>
 </div>
