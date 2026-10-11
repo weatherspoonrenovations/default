@@ -1,0 +1,246 @@
+<title>Master Suite &amp; Great Room Plan</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* Layout: one reading column; the plan figure breaks wider, with an Existing / Proposed switch over one drawing frame. */
+  :root {
+    --bg: #eef1f4; --surface: #ffffff; --ink: #1a2027; --muted: #5b6672;
+    --line: #c9d0d8; --line-soft: #e1e6ec;
+    --accent: #2457a6; --accent-soft: #dbe6f8;
+    --warn: #b96f0e; --warn-soft: #fbeedb;
+    --demo: #c23b2e; --demo-soft: #f8dcd8;
+    --wall: #2b323b; --floor: #ffffff; --fix: #f1f3f6; --wet: #dceaf7; --bed: #ece4d6;
+    --display: "IBM Plex Sans Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+    --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+    --mono: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12171d; --surface: #1b222b; --ink: #e6eaee; --muted: #98a3ae;
+      --line: #313b46; --line-soft: #26303a; --accent: #7fa7ee; --accent-soft: #223452;
+      --warn: #e5a04a; --warn-soft: #3a2c16; --demo: #f07a6c; --demo-soft: #43211d;
+      --wall: #cfd6de; --floor: #1b222b; --fix: #26303a; --wet: #1f3247; --bed: #3a342a;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12171d; --surface: #1b222b; --ink: #e6eaee; --muted: #98a3ae;
+    --line: #313b46; --line-soft: #26303a; --accent: #7fa7ee; --accent-soft: #223452;
+    --warn: #e5a04a; --warn-soft: #3a2c16; --demo: #f07a6c; --demo-soft: #43211d;
+    --wall: #cfd6de; --floor: #1b222b; --fix: #26303a; --wet: #1f3247; --bed: #3a342a;
+    color-scheme: dark;
+  }
+  body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.55; margin: 0; padding-inline: 16px; padding-block: 0 64px; }
+  .page { max-width: 820px; margin: 0 auto; }
+  header.masthead { padding-block: 40px 20px; border-bottom: 2px solid var(--ink); margin-bottom: 24px; }
+  .eyebrow { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0 0 8px; }
+  h1 { font-family: var(--display); font-weight: 700; font-size: clamp(34px, 6vw, 48px); line-height: 1.05; margin: 0 0 12px; text-wrap: balance; letter-spacing: -0.01em; }
+  .lede { font-size: 18px; max-width: 62ch; margin: 0; }
+  h2 { font-family: var(--display); font-weight: 600; font-size: 26px; margin: 44px 0 12px; text-wrap: balance; }
+  h3 { font-family: var(--display); font-weight: 600; font-size: 19px; margin: 24px 0 6px; }
+  p { max-width: 68ch; margin: 0 0 12px; }
+  ul { max-width: 68ch; padding-left: 22px; margin: 0 0 14px; }
+  li { margin-bottom: 6px; }
+  .note { background: var(--warn-soft); border-left: 3px solid var(--warn); padding: 10px 14px; margin: 16px 0; max-width: 68ch; }
+  .note p { margin: 0; }
+  .note p + p { margin-top: 8px; }
+
+  /* plan figure */
+  figure { margin: 8px 0 18px; background: var(--surface); border: 1px solid var(--line); padding: 12px 12px 10px; }
+  .bar { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .seg { display: inline-flex; border: 1px solid var(--ink); border-radius: 4px; overflow: hidden; }
+  .seg button { font: 600 14px/1 var(--display); letter-spacing: 0.04em; text-transform: uppercase; padding: 9px 14px; border: 0; background: transparent; color: var(--ink); cursor: pointer; }
+  .seg button + button { border-left: 1px solid var(--ink); }
+  .seg button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+  .seg button:focus-visible, .optbox input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .optbox { font-size: 14px; display: inline-flex; align-items: center; gap: 8px; cursor: pointer; }
+  .optbox input { width: 17px; height: 17px; accent-color: var(--warn); }
+  .draw { overflow-x: auto; }
+  .draw svg { display: block; width: 100%; min-width: 600px; height: auto; font-family: var(--mono); }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 13px; color: var(--muted); margin-top: 8px; }
+  .legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .sw { width: 22px; height: 8px; display: inline-block; }
+  .sw.wall { background: var(--wall); }
+  .sw.new { background: var(--accent); }
+  .sw.demo { background: repeating-linear-gradient(90deg, var(--demo) 0 4px, transparent 4px 7px); border: 1px solid var(--demo); }
+  .sw.opt { background: repeating-linear-gradient(90deg, var(--warn) 0 2px, transparent 2px 5px); border: 1px solid var(--warn); }
+  .sw.beam { height: 0; border-top: 2px dashed var(--accent); }
+  figcaption { font-size: 14px; color: var(--muted); margin-top: 10px; max-width: 72ch; }
+  figcaption b { color: var(--ink); font-weight: 600; }
+
+  /* svg parts */
+  svg .wall { fill: var(--wall); }
+  svg .new { fill: var(--accent); }
+  svg .demo { fill: var(--demo-soft); stroke: var(--demo); stroke-width: 0.07; stroke-dasharray: 0.35 0.2; }
+  svg .optdemo { fill: var(--warn-soft); stroke: var(--warn); stroke-width: 0.07; stroke-dasharray: 0.12 0.15; }
+  svg .post { fill: var(--accent); }
+  svg .beam { stroke: var(--accent); stroke-width: 0.14; stroke-dasharray: 0.5 0.25; fill: none; }
+  svg .win { fill: var(--floor); stroke: var(--wall); stroke-width: 0.06; }
+  svg .winl { stroke: var(--wall); stroke-width: 0.05; }
+  svg .door, svg .pocket { stroke: var(--wall); stroke-width: 0.08; fill: none; }
+  svg .pocket { stroke-width: 0.14; stroke-dasharray: 0.3 0.12; }
+  svg .doorarc { stroke: var(--muted); stroke-width: 0.04; fill: none; stroke-dasharray: 0.15 0.1; }
+  svg .bifold { stroke: var(--accent); stroke-width: 0.08; fill: none; }
+  svg .vent { stroke: var(--warn); stroke-width: 0.1; fill: none; stroke-dasharray: 0.25 0.12; }
+  svg .hearth { fill: var(--fix); stroke: var(--wall); stroke-width: 0.06; }
+  svg .firebox { fill: var(--wall); }
+  svg .fix { fill: var(--fix); stroke: var(--muted); stroke-width: 0.05; }
+  svg .fixhi { fill: var(--wet); stroke: var(--accent); stroke-width: 0.06; }
+  svg .sink { fill: var(--surface); stroke: var(--accent); stroke-width: 0.05; }
+  svg .shower { fill: var(--wet); stroke: var(--accent); stroke-width: 0.05; }
+  svg .glass { stroke: var(--accent); stroke-width: 0.1; }
+  svg .closet { fill: var(--fix); }
+  svg .bed { fill: var(--bed); stroke: var(--muted); stroke-width: 0.05; }
+  svg .duvet { fill: var(--bed); stroke: var(--muted); stroke-width: 0.04; }
+  svg .pillow { fill: var(--surface); stroke: var(--muted); stroke-width: 0.04; }
+  [hidden] { display: none !important; }
+  svg .lbl, svg .dim { paint-order: stroke; stroke: var(--surface); stroke-width: 0.22; stroke-linejoin: round; }
+  svg .lbl { fill: var(--ink); font-weight: 500; letter-spacing: 0.02em; }
+  svg .dim { fill: var(--muted); }
+  svg .mk { fill: var(--accent); }
+  svg .mkt { fill: var(--surface); font-weight: 500; }
+  svg .sb1 { fill: var(--ink); }
+  svg .sb2 { fill: var(--line); }
+  .plan:not(.show-opt) .opt { display: none; }
+  .plan.show-opt .keep { display: none; }
+
+  /* scope list */
+  .steps { list-style: none; padding: 0; max-width: 72ch; }
+  .steps > li { display: grid; grid-template-columns: 30px 1fr; gap: 12px; padding-block: 14px; border-top: 1px solid var(--line); margin: 0; }
+  .steps > li > div { min-width: 0; }
+  .num { width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--surface); font: 500 14px/26px var(--mono); text-align: center; }
+  .steps h3 { margin: 1px 0 6px; }
+  .steps p { margin: 0 0 6px; }
+  .steps ul { margin: 4px 0 0; }
+  .tag { display: inline-block; font-family: var(--mono); font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; padding: 1px 6px; border: 1px solid var(--warn); color: var(--warn); border-radius: 3px; vertical-align: 2px; margin-left: 6px; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; margin: 8px 0 18px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line-soft); vertical-align: top; }
+  th { font-family: var(--display); font-weight: 600; font-size: 14px; letter-spacing: 0.03em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--line); }
+  td.n { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .tablewrap { overflow-x: auto; }
+  footer { margin-top: 48px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+  @media (max-width: 480px) { th, td { padding: 6px; font-size: 14px; } .seg button { padding: 9px 11px; } }
+</style>
+
+<div class="page">
+<header class="masthead">
+  <p class="eyebrow">Layout study · single-story, 3 bed / 1 bath</p>
+  <h1>Master Suite &amp; Great Room Plan</h1>
+  <p class="lede">The rear room becomes the master suite, with the old laundry and closet turned into its bath. The wall between the front bedroom and the living room comes out to make one great room. The washer and dryer move to a closet at the end of the bedroom hall. You end up with 3 bedrooms and 2 baths, two of them primaries.</p>
+</header>
+
+<figure class="plan" id="plan">
+  <div class="bar">
+    <div class="seg" role="group" aria-label="Plan to show">
+      <button type="button" id="btn-proposed" aria-pressed="true">Proposed</button>
+      <button type="button" id="btn-existing" aria-pressed="false">Existing</button>
+    </div>
+    <label class="optbox" id="optwrap"><input type="checkbox" id="opt"> Also open the kitchen and dining walls</label>
+  </div>
+  <div class="draw" id="draw-proposed"><svg viewBox="-2.5 -16.3 49.2 45.0" role="img" aria-label="Proposed floor plan: the rear room becomes a master suite with the old laundry and closet turned into a 6 foot 2 by 7 foot 9 master bath, the wall between the front bedroom and the living room comes out to make one great room, and a stacked washer and dryer moves into a closet at the end of the bedroom hall." xmlns="http://www.w3.org/2000/svg"><rect class="wall" x="0.00" y="0.00" width="31.50" height="0.50"/><rect class="wall" x="35.00" y="0.00" width="2.50" height="0.50"/><rect class="wall" x="0.00" y="0.00" width="0.50" height="26.92"/><rect class="wall" x="0.00" y="26.42" width="21.40" height="0.50"/><rect class="wall" x="24.20" y="26.42" width="13.30" height="0.50"/><rect class="wall" x="37.00" y="0.00" width="0.50" height="26.92"/><rect class="wall" x="30.17" y="-13.83" width="0.50" height="13.83"/><rect class="wall" x="30.17" y="-13.83" width="14.00" height="0.50"/><rect class="wall" x="43.67" y="-13.83" width="0.50" height="18.50"/><rect class="wall" x="37.00" y="4.17" width="7.17" height="0.50"/><rect class="wall" x="30.17" y="0.00" width="0.33" height="5.40"/><rect class="wall" x="27.80" y="5.07" width="2.70" height="0.33"/><rect class="wall" x="11.20" y="0.50" width="0.35" height="10.00"/><rect class="wall" x="16.72" y="0.50" width="0.33" height="10.00"/><rect class="wall" x="0.50" y="10.17" width="0.50" height="0.33"/><rect class="wall" x="3.40" y="10.17" width="5.00" height="0.33"/><rect class="wall" x="10.90" y="10.17" width="1.30" height="0.33"/><rect class="wall" x="14.70" y="10.17" width="2.02" height="0.33"/><rect class="wall" x="3.90" y="10.50" width="0.33" height="2.67"/><rect class="wall" x="11.20" y="13.50" width="0.35" height="12.92"/><rect class="wall" x="9.60" y="21.60" width="0.33" height="4.82"/><rect class="wall" x="9.60" y="21.60" width="1.60" height="0.33"/><rect class="wall" x="30.50" y="13.17" width="6.50" height="0.33"/><rect class="win" x="5.20" y="0.00" width="3.40" height="0.50"/><line class="winl" x1="5.20" y1="0.25" x2="8.60" y2="0.25"/><rect class="win" x="12.60" y="0.00" width="2.30" height="0.50"/><line class="winl" x1="12.60" y1="0.25" x2="14.90" y2="0.25"/><rect class="win" x="18.40" y="0.00" width="5.60" height="0.50"/><line class="winl" x1="18.40" y1="0.25" x2="24.00" y2="0.25"/><rect class="win" x="0.00" y="4.60" width="0.50" height="2.80"/><line class="winl" x1="0.25" y1="4.60" x2="0.25" y2="7.40"/><rect class="win" x="0.00" y="17.00" width="0.50" height="2.80"/><line class="winl" x1="0.25" y1="17.00" x2="0.25" y2="19.80"/><rect class="win" x="4.20" y="26.42" width="2.80" height="0.50"/><line class="winl" x1="4.20" y1="26.67" x2="7.00" y2="26.67"/><rect class="win" x="13.40" y="26.42" width="7.20" height="0.50"/><line class="winl" x1="13.40" y1="26.67" x2="20.60" y2="26.67"/><rect class="win" x="30.60" y="26.42" width="2.80" height="0.50"/><line class="winl" x1="30.60" y1="26.67" x2="33.40" y2="26.67"/><rect class="win" x="37.00" y="6.80" width="0.50" height="2.60"/><line class="winl" x1="37.25" y1="6.80" x2="37.25" y2="9.40"/><rect class="win" x="37.00" y="17.60" width="0.50" height="2.80"/><line class="winl" x1="37.25" y1="17.60" x2="37.25" y2="20.40"/><rect class="win" x="32.60" y="-13.83" width="8.00" height="0.50"/><line class="winl" x1="32.60" y1="-13.58" x2="40.60" y2="-13.58"/><rect class="win" x="30.17" y="-9.50" width="0.50" height="2.10"/><line class="winl" x1="30.42" y1="-9.50" x2="30.42" y2="-7.40"/><rect class="win" x="30.17" y="-6.20" width="0.50" height="2.20"/><line class="winl" x1="30.42" y1="-6.20" x2="30.42" y2="-4.00"/><rect class="win" x="43.67" y="-10.00" width="0.50" height="2.40"/><line class="winl" x1="43.92" y1="-10.00" x2="43.92" y2="-7.60"/><rect class="hearth" x="11.55" y="16.90" width="1.35" height="4.60"/><rect class="firebox" x="11.55" y="18.10" width="0.85" height="2.20"/><line class="door" x1="10.90" y1="10.50" x2="10.90" y2="8.00"/><path class="doorarc" d="M8.40,10.50 A2.50,2.50 0 0 1 10.90,8.00"/><line class="door" x1="14.70" y1="10.50" x2="14.70" y2="8.00"/><path class="doorarc" d="M12.20,10.50 A2.50,2.50 0 0 1 14.70,8.00"/><line class="door" x1="8.40" y1="13.17" x2="8.40" y2="15.67"/><path class="doorarc" d="M10.90,13.17 A2.50,2.50 0 0 1 8.40,15.67"/><line class="door" x1="1.00" y1="10.17" x2="1.00" y2="7.77"/><path class="doorarc" d="M3.40,10.17 A2.40,2.40 0 0 0 1.00,7.77"/><line class="door" x1="24.20" y1="26.42" x2="24.20" y2="23.62"/><path class="doorarc" d="M21.40,26.42 A2.80,2.80 0 0 1 24.20,23.62"/><rect class="demo" x="17.05" y="13.17" width="10.75" height="0.33"/><line class="beam" x1="16.88" y1="13.33" x2="27.98" y2="13.33"/><rect class="post" x="16.72" y="13.00" width="0.33" height="0.66"/><rect class="post" x="27.80" y="13.00" width="0.35" height="0.66"/><g class="opt"><rect class="optdemo" x="27.80" y="5.40" width="0.35" height="8.10"/><rect class="optdemo" x="27.80" y="13.50" width="0.35" height="4.00"/><rect class="optdemo" x="27.80" y="21.00" width="0.35" height="5.42"/></g><g class="keep"><rect class="wall" x="27.80" y="5.40" width="0.35" height="8.10"/><rect class="wall" x="27.80" y="13.50" width="0.35" height="4.00"/><rect class="wall" x="27.80" y="21.00" width="0.35" height="5.42"/></g><rect class="wall" x="7.70" y="10.50" width="0.35" height="0.25"/><rect class="wall" x="7.70" y="12.92" width="0.35" height="0.25"/><rect class="wall" x="0.50" y="13.17" width="4.10" height="0.33"/><rect class="new" x="4.60" y="13.17" width="2.60" height="0.33"/><rect class="wall" x="7.20" y="13.17" width="1.20" height="0.33"/><rect class="wall" x="10.90" y="13.17" width="0.65" height="0.33"/><polyline class="bifold" points="8.05,10.75 8.75,11.29 8.05,11.83 8.75,12.37 8.05,12.92"/><rect class="fixhi" x="4.45" y="10.70" width="2.50" height="2.27"/><text class="lbl" x="5.70" y="11.70" font-size="0.5" text-anchor="middle">W/D</text><text class="dim" x="5.70" y="12.35" font-size="0.42" text-anchor="middle">stack</text><path class="vent" d="M4.45,11.2 L0.5,11.2"/><rect class="demo" x="37.50" y="0.00" width="6.17" height="0.40"/><rect class="demo" x="40.00" y="-3.95" width="0.33" height="3.95"/><rect class="demo" x="40.33" y="-3.95" width="3.34" height="0.33"/><rect class="new" x="37.00" y="0.90" width="0.50" height="2.80"/><rect class="new" x="37.00" y="-6.33" width="0.33" height="2.93"/><rect class="new" x="37.00" y="-0.90" width="0.33" height="0.90"/><rect class="new" x="37.33" y="-3.93" width="6.34" height="0.33"/><line class="pocket" x1="37.17" y1="-3.4" x2="37.17" y2="-0.9"/><rect class="closet" x="37.33" y="-6.33" width="6.34" height="2.40"/><line class="door" x1="37.5" y1="-6.25" x2="40.7" y2="-6.25"/><line class="door" x1="40.3" y1="-6.05" x2="43.5" y2="-6.05"/><rect class="fixhi" x="41.97" y="-3.60" width="1.70" height="4.20"/><ellipse class="sink" cx="42.82" cy="-1.5" rx="0.5" ry="0.7"/><rect class="fixhi" x="38.20" y="3.45" width="1.50" height="0.72"/><ellipse class="fixhi" cx="38.95" cy="2.55" rx="0.62" ry="0.9"/><rect class="shower" x="40.67" y="1.17" width="3.00" height="3.00"/><circle class="sink" cx="42.17" cy="2.67" r="0.22"/><line class="glass" x1="40.67" y1="1.17" x2="43.67" y2="1.17"/><line class="glass" x1="40.67" y1="1.17" x2="40.67" y2="4.17"/><line class="pocket" x1="31.5" y1="0.25" x2="35" y2="0.25"/><rect class="bed" x="32.00" y="-13.33" width="5.00" height="6.66"/><rect class="pillow" x="32.40" y="-13.00" width="1.90" height="1.00"/><rect class="pillow" x="34.70" y="-13.00" width="1.90" height="1.00"/><rect class="duvet" x="32.00" y="-11.60" width="5.00" height="4.93"/><rect class="fix" x="30.67" y="-13.33" width="1.23" height="1.33"/><rect class="fix" x="37.10" y="-13.33" width="1.30" height="1.33"/><text class="lbl" x="39.60" y="-10.40" font-size="0.78" text-anchor="middle">MASTER SUITE</text><text class="dim" x="39.60" y="-9.50" font-size="0.66" text-anchor="middle">13'0" × 13'4" room</text><text class="dim" x="40.50" y="-4.85" font-size="0.5" text-anchor="middle">CLOSET 6'4" × 2'1"</text><text class="lbl" x="39.30" y="-2.20" font-size="0.55" text-anchor="middle">MASTER BATH</text><text class="dim" x="39.30" y="-1.57" font-size="0.47" text-anchor="middle">6'2" × 7'9"</text><text class="lbl" x="32.60" y="8.60" font-size="0.78" text-anchor="middle">KITCHEN</text><text class="dim" x="32.60" y="9.50" font-size="0.66" text-anchor="middle">8'10" × 12'8"</text><text class="lbl" x="22.40" y="8.60" font-size="0.78" text-anchor="middle">GREAT ROOM</text><text class="dim" x="22.40" y="9.50" font-size="0.66" text-anchor="middle">about 350 sq ft</text><text class="dim" x="22.40" y="10.90" font-size="0.5" text-anchor="middle">(old front bedroom + living room)</text><text class="lbl" x="13.90" y="4.60" font-size="0.78" text-anchor="middle">BATH</text><text class="dim" x="13.90" y="5.50" font-size="0.66" text-anchor="middle">5'2" × 9'2"</text><text class="lbl" x="5.90" y="4.40" font-size="0.78" text-anchor="middle">PRIMARY BEDROOM 2</text><text class="dim" x="5.90" y="5.30" font-size="0.66" text-anchor="middle">10'8" × 9'8"</text><text class="lbl" x="12.60" y="12.00" font-size="0.62" text-anchor="middle">HALL</text><text class="lbl" x="5.40" y="18.80" font-size="0.78" text-anchor="middle">BEDROOM</text><text class="dim" x="5.40" y="19.70" font-size="0.66" text-anchor="middle">10'8" × 12'11"</text><text class="lbl" x="19.80" y="21.60" font-size="0.7" text-anchor="middle">LIVING AREA</text><text class="lbl" x="32.60" y="19.30" font-size="0.78" text-anchor="middle">DINING AREA</text><text class="dim" x="32.60" y="20.20" font-size="0.66" text-anchor="middle">8'10" × 12'11"</text><text class="dim" x="2.20" y="12.10" font-size="0.55" text-anchor="middle">CL</text><circle class="mk" cx="22.40" cy="14.60" r="0.62"/><text class="mkt" x="22.40" y="14.87" font-size="0.75" text-anchor="middle">1</text><circle class="mk" cx="39.90" cy="0.20" r="0.62"/><text class="mkt" x="39.90" y="0.47" font-size="0.75" text-anchor="middle">2</text><circle class="mk" cx="40.50" cy="-7.30" r="0.62"/><text class="mkt" x="40.50" y="-7.03" font-size="0.75" text-anchor="middle">3</text><circle class="mk" cx="33.25" cy="1.50" r="0.62"/><text class="mkt" x="33.25" y="1.77" font-size="0.75" text-anchor="middle">4</text><circle class="mk" cx="9.30" cy="11.85" r="0.62"/><text class="mkt" x="9.30" y="12.12" font-size="0.75" text-anchor="middle">5</text><circle class="mk" cx="29.50" cy="16.00" r="0.62"/><text class="mkt" x="29.50" y="16.27" font-size="0.75" text-anchor="middle">6</text><g class="scale"><rect x="0" y="27.9" width="5" height="0.25" class="sb1"/><rect x="5" y="27.9" width="5" height="0.25" class="sb2"/><text class="dim" x="0" y="27.6" font-size="0.6">0</text><text class="dim" x="5" y="27.6" font-size="0.6" text-anchor="middle">5</text><text class="dim" x="10" y="27.6" font-size="0.6" text-anchor="middle">10 ft</text></g><text class="dim" x="44" y="-14.6" font-size="0.6" text-anchor="end">REAR</text><text class="dim" x="22.4" y="28.3" font-size="0.6" text-anchor="middle">FRONT</text></svg>
+</div>
+  <div class="draw" id="draw-existing" hidden><svg viewBox="-2.5 -16.3 49.2 45.0" role="img" aria-label="Existing floor plan: three bedrooms, one bath, with a 13 by 13 foot rear room and a small laundry behind the kitchen." xmlns="http://www.w3.org/2000/svg"><rect class="wall" x="0.00" y="0.00" width="31.50" height="0.50"/><rect class="wall" x="35.00" y="0.00" width="2.50" height="0.50"/><rect class="wall" x="0.00" y="0.00" width="0.50" height="26.92"/><rect class="wall" x="0.00" y="26.42" width="21.40" height="0.50"/><rect class="wall" x="24.20" y="26.42" width="13.30" height="0.50"/><rect class="wall" x="37.00" y="0.00" width="0.50" height="0.90"/><rect class="wall" x="37.00" y="3.70" width="0.50" height="23.22"/><rect class="wall" x="30.17" y="-13.83" width="0.50" height="13.83"/><rect class="wall" x="30.17" y="-13.83" width="14.00" height="0.50"/><rect class="wall" x="43.67" y="-13.83" width="0.50" height="18.50"/><rect class="wall" x="37.00" y="4.17" width="7.17" height="0.50"/><rect class="wall" x="30.17" y="0.00" width="0.33" height="5.40"/><rect class="wall" x="27.80" y="5.07" width="2.70" height="0.33"/><rect class="wall" x="11.20" y="0.50" width="0.35" height="10.00"/><rect class="wall" x="16.72" y="0.50" width="0.33" height="10.00"/><rect class="wall" x="0.50" y="10.17" width="0.50" height="0.33"/><rect class="wall" x="3.40" y="10.17" width="5.00" height="0.33"/><rect class="wall" x="10.90" y="10.17" width="1.30" height="0.33"/><rect class="wall" x="14.70" y="10.17" width="2.02" height="0.33"/><rect class="wall" x="3.90" y="10.50" width="0.33" height="2.67"/><rect class="wall" x="11.20" y="13.50" width="0.35" height="12.92"/><rect class="wall" x="9.60" y="21.60" width="0.33" height="4.82"/><rect class="wall" x="9.60" y="21.60" width="1.60" height="0.33"/><rect class="wall" x="30.50" y="13.17" width="6.50" height="0.33"/><rect class="win" x="5.20" y="0.00" width="3.40" height="0.50"/><line class="winl" x1="5.20" y1="0.25" x2="8.60" y2="0.25"/><rect class="win" x="12.60" y="0.00" width="2.30" height="0.50"/><line class="winl" x1="12.60" y1="0.25" x2="14.90" y2="0.25"/><rect class="win" x="18.40" y="0.00" width="5.60" height="0.50"/><line class="winl" x1="18.40" y1="0.25" x2="24.00" y2="0.25"/><rect class="win" x="0.00" y="4.60" width="0.50" height="2.80"/><line class="winl" x1="0.25" y1="4.60" x2="0.25" y2="7.40"/><rect class="win" x="0.00" y="17.00" width="0.50" height="2.80"/><line class="winl" x1="0.25" y1="17.00" x2="0.25" y2="19.80"/><rect class="win" x="4.20" y="26.42" width="2.80" height="0.50"/><line class="winl" x1="4.20" y1="26.67" x2="7.00" y2="26.67"/><rect class="win" x="13.40" y="26.42" width="7.20" height="0.50"/><line class="winl" x1="13.40" y1="26.67" x2="20.60" y2="26.67"/><rect class="win" x="30.60" y="26.42" width="2.80" height="0.50"/><line class="winl" x1="30.60" y1="26.67" x2="33.40" y2="26.67"/><rect class="win" x="37.00" y="6.80" width="0.50" height="2.60"/><line class="winl" x1="37.25" y1="6.80" x2="37.25" y2="9.40"/><rect class="win" x="37.00" y="17.60" width="0.50" height="2.80"/><line class="winl" x1="37.25" y1="17.60" x2="37.25" y2="20.40"/><rect class="win" x="32.60" y="-13.83" width="8.00" height="0.50"/><line class="winl" x1="32.60" y1="-13.58" x2="40.60" y2="-13.58"/><rect class="win" x="30.17" y="-9.50" width="0.50" height="2.10"/><line class="winl" x1="30.42" y1="-9.50" x2="30.42" y2="-7.40"/><rect class="win" x="30.17" y="-6.20" width="0.50" height="2.20"/><line class="winl" x1="30.42" y1="-6.20" x2="30.42" y2="-4.00"/><rect class="win" x="43.67" y="-10.00" width="0.50" height="2.40"/><line class="winl" x1="43.92" y1="-10.00" x2="43.92" y2="-7.60"/><rect class="hearth" x="11.55" y="16.90" width="1.35" height="4.60"/><rect class="firebox" x="11.55" y="18.10" width="0.85" height="2.20"/><line class="door" x1="10.90" y1="10.50" x2="10.90" y2="8.00"/><path class="doorarc" d="M8.40,10.50 A2.50,2.50 0 0 1 10.90,8.00"/><line class="door" x1="14.70" y1="10.50" x2="14.70" y2="8.00"/><path class="doorarc" d="M12.20,10.50 A2.50,2.50 0 0 1 14.70,8.00"/><line class="door" x1="8.40" y1="13.17" x2="8.40" y2="15.67"/><path class="doorarc" d="M10.90,13.17 A2.50,2.50 0 0 1 8.40,15.67"/><line class="door" x1="1.00" y1="10.17" x2="1.00" y2="7.77"/><path class="doorarc" d="M3.40,10.17 A2.40,2.40 0 0 0 1.00,7.77"/><line class="door" x1="24.20" y1="26.42" x2="24.20" y2="23.62"/><path class="doorarc" d="M21.40,26.42 A2.80,2.80 0 0 1 24.20,23.62"/><rect class="wall" x="7.70" y="10.50" width="0.35" height="2.67"/><rect class="wall" x="0.50" y="13.17" width="4.10" height="0.33"/><rect class="wall" x="7.20" y="13.17" width="1.20" height="0.33"/><rect class="wall" x="10.90" y="13.17" width="0.65" height="0.33"/><line class="door" x1="7.20" y1="13.50" x2="7.20" y2="15.90"/><path class="doorarc" d="M4.80,13.50 A2.40,2.40 0 0 0 7.20,15.90"/><rect class="wall" x="17.05" y="13.17" width="10.75" height="0.33"/><rect class="wall" x="27.80" y="5.40" width="0.35" height="8.10"/><rect class="wall" x="27.80" y="13.50" width="0.35" height="4.00"/><rect class="wall" x="27.80" y="21.00" width="0.35" height="5.42"/><rect class="wall" x="37.50" y="0.00" width="6.17" height="0.40"/><rect class="wall" x="40.00" y="-3.95" width="0.33" height="0.65"/><rect class="wall" x="40.00" y="-0.60" width="0.33" height="0.60"/><rect class="wall" x="40.00" y="-3.95" width="3.67" height="0.33"/><line class="door" x1="37.50" y1="3.70" x2="37.50" y2="1.10"/><path class="doorarc" d="M40.10,3.70 A2.60,2.60 0 0 0 37.50,1.10"/><rect class="fix" x="38.00" y="0.90" width="2.40" height="2.70"/><rect class="fix" x="40.70" y="0.90" width="2.40" height="2.70"/><text class="lbl" x="39.20" y="2.50" font-size="0.6" text-anchor="middle">W</text><text class="lbl" x="41.90" y="2.50" font-size="0.6" text-anchor="middle">D</text><text class="lbl" x="37.20" y="-8.20" font-size="0.78" text-anchor="middle">ROOM</text><text class="dim" x="37.20" y="-7.30" font-size="0.66" text-anchor="middle">13'0" × 13'4"</text><text class="lbl" x="40.60" y="5.75" font-size="0.6" text-anchor="middle">LAUNDRY 6'2" × 3'8"</text><text class="lbl" x="32.60" y="8.20" font-size="0.78" text-anchor="middle">KITCHEN</text><text class="dim" x="32.60" y="9.10" font-size="0.66" text-anchor="middle">8'10" × 12'8"</text><text class="lbl" x="22.40" y="6.40" font-size="0.78" text-anchor="middle">PRIMARY BEDROOM</text><text class="dim" x="22.40" y="7.30" font-size="0.66" text-anchor="middle">10'9" × 12'8"</text><text class="lbl" x="13.90" y="4.60" font-size="0.78" text-anchor="middle">BATH</text><text class="dim" x="13.90" y="5.50" font-size="0.66" text-anchor="middle">5'2" × 9'2"</text><text class="lbl" x="5.90" y="4.40" font-size="0.78" text-anchor="middle">PRIMARY BEDROOM</text><text class="dim" x="5.90" y="5.30" font-size="0.66" text-anchor="middle">10'8" × 9'8"</text><text class="lbl" x="12.40" y="12.00" font-size="0.62" text-anchor="middle">HALL</text><text class="dim" x="12.40" y="12.71" font-size="0.53" text-anchor="middle">8'8" × 3'2"</text><text class="lbl" x="5.40" y="18.80" font-size="0.78" text-anchor="middle">BEDROOM</text><text class="dim" x="5.40" y="19.70" font-size="0.66" text-anchor="middle">10'8" × 12'11"</text><text class="lbl" x="19.80" y="21.60" font-size="0.78" text-anchor="middle">LIVING ROOM</text><text class="dim" x="19.80" y="22.50" font-size="0.66" text-anchor="middle">16'3" × 12'11"</text><text class="lbl" x="32.60" y="19.30" font-size="0.78" text-anchor="middle">DINING AREA</text><text class="dim" x="32.60" y="20.20" font-size="0.66" text-anchor="middle">8'10" × 12'11"</text><text class="dim" x="2.20" y="12.10" font-size="0.55" text-anchor="middle">CL</text><text class="dim" x="5.90" y="12.10" font-size="0.55" text-anchor="middle">CL</text><g class="scale"><rect x="0" y="27.9" width="5" height="0.25" class="sb1"/><rect x="5" y="27.9" width="5" height="0.25" class="sb2"/><text class="dim" x="0" y="27.6" font-size="0.6">0</text><text class="dim" x="5" y="27.6" font-size="0.6" text-anchor="middle">5</text><text class="dim" x="10" y="27.6" font-size="0.6" text-anchor="middle">10 ft</text></g><text class="dim" x="44" y="-14.6" font-size="0.6" text-anchor="end">REAR</text><text class="dim" x="22.4" y="28.3" font-size="0.6" text-anchor="middle">FRONT</text></svg>
+</div>
+  <div class="legend" id="legend">
+    <span><i class="sw wall"></i>Existing wall</span>
+    <span><i class="sw new"></i>New wall</span>
+    <span><i class="sw demo"></i>Remove</span>
+    <span><i class="sw opt"></i>Optional removal</span>
+    <span><i class="sw beam"></i>New beam</span>
+  </div>
+  <figcaption><b>Plan view, front of the house at the bottom.</b> Drawn to the listing's room sizes. Wall thicknesses, window positions and door swings are read off the listing sketch, so treat everything here as approximate until the house is measured. The numbers match the scope list below.</figcaption>
+</figure>
+
+<h2>What changes</h2>
+<ol class="steps">
+  <li><span class="num">1</span><div>
+    <h3>Great room <span class="tag">engineer</span></h3>
+    <p>Take out the 10'9" wall between the front bedroom and the living room. The two rooms together come to about 350 sq ft, and the hall now opens straight into it.</p>
+    <p>That wall runs down the middle of the house, the long way, which is where a ranch's ceiling joists usually land. Assume it is bearing until the attic says otherwise. The usual fix is a flush LVL beam in the ceiling, carried on posts at each end down to footings, sized by an engineer. Build temporary shoring walls on both sides before it comes out.</p>
+    <ul>
+      <li>The old bedroom's closet nook beside the kitchen can stay as a built-in or bar niche, or come out with the wall.</li>
+      <li>Expect to patch flooring and ceiling along the old wall line. Bedrooms and living rooms often have different floor finishes.</li>
+    </ul>
+  </div></li>
+  <li><span class="num">2</span><div>
+    <h3>Master bath, 6'2" × 7'9"</h3>
+    <p>Remove the wall between the rear room and the laundry, and the small closet in the room's corner. The two spaces become one bath: a 3' × 3' shower in the back corner, a toilet beside it, and a 48" vanity along the outside wall.</p>
+    <p>This is the simplest place for a bath because water lines and a drain already sit there for the washer. A washer drain is 2", though, and a toilet needs 3", so run a new 3" line out to the main and vent it. Close up the old laundry door into the kitchen, and add an exhaust fan ducted outside.</p>
+  </div></li>
+  <li><span class="num">3</span><div>
+    <h3>Closet and bath door</h3>
+    <p>A 6'4" reach-in closet backs onto the bath, with bypass doors facing the bedroom. The bath gets a pocket door so no swing eats into the room. A queen bed goes on the back wall under the window, with space for a dresser beside the closet.</p>
+  </div></li>
+  <li><span class="num">4</span><div>
+    <h3>Suite door off the kitchen</h3>
+    <p>The suite is still entered through the kitchen, which keeps the plan simple. Put a pocket door in that opening so the master suite can be closed off.</p>
+  </div></li>
+  <li><span class="num">5</span><div>
+    <h3>Laundry at the end of the hall</h3>
+    <p>The small closet at the end of the bedroom hall is turned to face the hall and gets bifold doors. A stacked 27" washer and dryer fits inside. This puts laundry next to the bedrooms, where the clothes are, and 4 to 7 feet from the hall bath's plumbing wall. The dryer vent runs through the neighboring closet to the outside wall, a run of about 4 feet.</p>
+    <ul>
+      <li>Hot and cold supply with a washer box, a 2" standpipe with trap and vent, and a pan with a drain under the washer.</li>
+      <li>A 30 A, 240 V circuit for the dryer (or a gas line) and a 20 A circuit for the washer.</li>
+      <li>If that closet belonged to the front bedroom, the bedroom still has its corner closet, drawn at the lower right of that room.</li>
+    </ul>
+  </div></li>
+  <li><span class="num">6</span><div>
+    <h3>Open it all the way <span class="tag">optional</span></h3>
+    <p>Tick "Also open the kitchen and dining walls" above the plan to see the walls between the great room, the kitchen and the dining area come out too. That makes kitchen, dining and living one room about 25' × 26'. These walls run across the house, so they are less likely to be bearing, but check the attic for joist splices sitting on them. Any kitchen cabinets on the old bedroom side of the kitchen wall would need to move.</p>
+  </div></li>
+</ol>
+
+<h2>Other places the laundry could go</h2>
+<div class="tablewrap">
+<table>
+  <thead><tr><th>Spot</th><th>For it</th><th>Against it</th></tr></thead>
+  <tbody>
+    <tr><td>End of bedroom hall <b>(drawn)</b></td><td>Next to the bedrooms. Short plumbing run from the hall bath. Short dryer vent to the outside wall.</td><td>Stacked unit only. Loses a small closet.</td></tr>
+    <tr><td>Kitchen closet against the new bath wall</td><td>Shares the new master bath's wet wall. The old supply lines are right there.</td><td>Takes the suite's entry corner and pushes the bath door to another wall. Laundry ends up in the kitchen.</td></tr>
+    <tr><td>Mudroom at the back door or deck</td><td>Room for side-by-side machines and a utility sink.</td><td>Needs new floor area or an addition, so it is the most expensive option.</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Rooms, before and after</h2>
+<div class="tablewrap">
+<table>
+  <thead><tr><th>Space</th><th>Now</th><th>After</th></tr></thead>
+  <tbody>
+    <tr><td>Rear room</td><td class="n">13'0" × 13'4"</td><td>Master suite, with bath and closet</td></tr>
+    <tr><td>Laundry + room closet</td><td class="n">6'2" × 3'8"</td><td>Master bath, <span class="n">6'2" × 7'9"</span></td></tr>
+    <tr><td>Front bedroom</td><td class="n">10'9" × 12'8"</td><td>Part of the great room</td></tr>
+    <tr><td>Living room</td><td class="n">16'3" × 12'11"</td><td>Great room, about <span class="n">350 sq ft</span> total</td></tr>
+    <tr><td>Back-left bedroom</td><td class="n">10'8" × 9'8"</td><td>Unchanged, second primary next to the hall bath</td></tr>
+    <tr><td>Front-left bedroom</td><td class="n">10'8" × 12'11"</td><td>Unchanged</td></tr>
+    <tr><td>Hall closet</td><td>Closet</td><td>Stacked laundry</td></tr>
+    <tr><td>Count</td><td>3 bed / 1 bath</td><td>3 bed / 2 bath</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="note">
+  <p><b>Check before pricing.</b> The great-room wall and the new toilet drain are the two items that set the budget. Look in the attic to see which way the joists run over the bedroom wall. Find out whether the rear room sits on a slab or a crawlspace, because that decides how hard the 3" drain is to run.</p>
+  <p>Both jobs need permits: structural for the beam, and plumbing and electrical for the bath and the laundry.</p>
+</div>
+
+<footer>Layout study from the listing floor plan. Sizes are from the listing and are not field measured. The deck idea is not drawn on this sheet.</footer>
+</div>
+
+<script>
+(function () {
+  var plan = document.getElementById('plan');
+  var bp = document.getElementById('btn-proposed'), be = document.getElementById('btn-existing');
+  var dp = document.getElementById('draw-proposed'), de = document.getElementById('draw-existing');
+  var opt = document.getElementById('opt'), optwrap = document.getElementById('optwrap');
+  var legend = document.getElementById('legend');
+  function show(which) {
+    var p = which === 'proposed';
+    bp.setAttribute('aria-pressed', p); be.setAttribute('aria-pressed', !p);
+    dp.hidden = !p; de.hidden = p; optwrap.hidden = !p; legend.hidden = !p;
+  }
+  bp.addEventListener('click', function () { show('proposed'); });
+  be.addEventListener('click', function () { show('existing'); });
+  opt.addEventListener('change', function () { plan.classList.toggle('show-opt', opt.checked); });
+  if (location.hash === '#existing') show('existing');
+})();
+</script>
