@@ -1,0 +1,258 @@
+<title>Axiom Box Brand Board</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;800;900&family=Barlow+Condensed:wght@700;800&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a screen-printer's spec sheet on black — logo first, then ink swatches, type, rules, sizes. Deliberately single-theme dark: the brand lives on black. */
+:root {
+  --ink: #000000;        /* background, always */
+  --press: #111111;      /* raised surfaces, black shirt */
+  --rule: #2a2723;       /* hairlines */
+  --cream: #F3E8CD;      /* primary type, light shapes */
+  --cream-dim: #A79F8B;  /* secondary type */
+  --orange: #EA7E22;     /* safety orange — warm accent */
+  --teal: #17B7C3;       /* electric teal — outlines, second word */
+  --f-display: "Barlow", "Arial Black", "Helvetica Neue", Arial, sans-serif;
+  --f-cond: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--ink);
+  color: var(--cream);
+  font-family: var(--f-display);
+  font-size: 16px;
+  line-height: 1.55;
+}
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding-block: 40px 72px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid;
+  gap: 64px;
+}
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+p { margin: 0; max-width: 65ch; }
+.label {
+  font-family: var(--f-mono);
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--cream-dim);
+}
+section { display: grid; gap: 24px; }
+section > header { display: grid; gap: 6px; border-top: 2px solid var(--teal); padding-top: 14px; }
+h2 { font-weight: 900; font-size: clamp(26px, 4vw, 34px); letter-spacing: .01em; text-transform: uppercase; }
+
+/* Hero */
+.hero { display: grid; gap: 28px; }
+.hero h1 {
+  font-weight: 900;
+  font-size: clamp(44px, 9vw, 96px);
+  line-height: .95;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+}
+.hero h1 .b { color: var(--teal); }
+.hero .lede { font-size: 18px; color: var(--cream); }
+.logo-plate { background: var(--ink); border: 1px solid var(--rule); padding: clamp(12px, 3vw, 32px); }
+.logo-plate img { display: block; width: 100%; height: auto; }
+.equation {
+  font-family: var(--f-cond);
+  font-weight: 800;
+  font-size: clamp(22px, 4vw, 32px);
+  letter-spacing: .02em;
+  display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline;
+}
+.equation .o { color: var(--orange); }
+.equation .t { color: var(--teal); }
+.equation .op { color: var(--cream-dim); }
+
+/* Palette */
+.swatches { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.swatch { display: grid; grid-template-rows: 150px auto; border: 1px solid var(--rule); background: var(--press); }
+.chip { display: flex; align-items: flex-end; padding: 12px; font-family: var(--f-mono); font-size: 12px; }
+.swatch .info { padding: 14px; display: grid; gap: 6px; min-width: 0; }
+.swatch h3 { font-size: 20px; font-weight: 800; text-transform: uppercase; }
+.codes { font-family: var(--f-mono); font-size: 13px; font-variant-numeric: tabular-nums; display: grid; gap: 2px; }
+.codes button {
+  all: unset; cursor: pointer; justify-self: start; border-bottom: 1px dotted var(--cream-dim);
+}
+.codes button:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+.swatch p { font-size: 14px; color: var(--cream-dim); }
+.ratio { display: flex; height: 28px; border: 1px solid var(--rule); }
+.ratio span { display: flex; align-items: center; padding-inline: 8px; font-family: var(--f-mono); font-size: 11px; color: var(--ink); white-space: nowrap; overflow: hidden; }
+
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.scroll { overflow-x: auto; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-family: var(--f-mono); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--cream-dim); font-weight: 500; }
+td.num { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+.pass { color: var(--teal); }
+.fail { color: var(--orange); }
+.pair { display: inline-block; padding: 2px 8px; font-weight: 800; }
+
+/* Type */
+.type-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.spec { border: 1px solid var(--rule); background: var(--press); padding: 20px; display: grid; gap: 12px; min-width: 0; }
+.spec .sample-display { font-weight: 900; font-size: 52px; line-height: 1; text-transform: uppercase; }
+.spec .sample-cond { font-family: var(--f-cond); font-weight: 800; font-size: 56px; line-height: 1; }
+.spec .sample-body { font-size: 17px; }
+.spec .sample-mono { font-family: var(--f-mono); font-size: 15px; }
+.spec p { font-size: 14px; color: var(--cream-dim); }
+
+/* Rules */
+.rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.rulecard { border: 1px solid var(--rule); padding: 20px; display: grid; gap: 12px; align-content: start; }
+.rulecard h3 { font-size: 15px; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; }
+.rulecard.do h3 { color: var(--teal); }
+.rulecard.dont h3 { color: var(--orange); }
+.rulecard ul { margin: 0; padding-left: 18px; display: grid; gap: 8px; font-size: 15px; }
+
+/* Texture demo */
+.texture { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; }
+.tex { aspect-ratio: 1; max-width: 100%; border: 1px solid var(--rule); display: grid; place-items: center; position: relative; overflow: hidden; }
+.tex canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.tex span { position: relative; font-family: var(--f-mono); font-size: 11px; background: var(--ink); color: var(--cream); padding: 3px 6px; }
+
+/* Sizes */
+.sizes td:first-child { font-weight: 700; }
+
+footer { font-family: var(--f-mono); font-size: 12px; color: var(--cream-dim); border-top: 1px solid var(--rule); padding-top: 16px; }
+.toast { position: fixed; left: 50%; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--teal); color: var(--ink); font-family: var(--f-mono); font-size: 13px; padding: 8px 14px; }
+@media (prefers-reduced-motion: no-preference) { .toast { transition: opacity .2s; } }
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="label">Channel identity · v1 · Oct 2026</div>
+    <h1>Axiom <span class="b">Box</span></h1>
+    <div class="logo-plate"><img src="data:image/webp;base64,__LOGO__" alt="Axiom Box rebus logo: an axe, plus an ion, minus N, plus M, then a cardboard box, with the wordmark AXIOM BOX underneath"></div>
+    <div class="equation" aria-label="Axe plus Ion minus N plus M equals Axiom, then Box">
+      <span class="o">AXE</span><span class="op">+</span><span class="t">ION</span><span class="op">−</span><span>N</span><span class="op">+</span><span class="o">M</span><span class="op">=</span><span>AXIOM</span><span class="t">BOX</span>
+    </div>
+    <p class="lede">The name is a puzzle you solve with pictures. Every piece of the channel should feel the same way: a bold flat icon, a bit of arithmetic, and a payoff in cream and teal on black.</p>
+  </header>
+
+  <section>
+    <header><div class="label">01 · Ink</div><h2>Palette</h2></header>
+    <p>Sampled from the Higgsfield artwork. Three inks on black, like a three-screen print job. Treat black as the shirt, not a color you print.</p>
+    <div class="swatches">
+      <div class="swatch"><div class="chip" style="background:var(--cream);color:var(--ink)">INK 1</div><div class="info"><h3>Print Cream</h3><div class="codes"><button type="button" data-copy="#F3E8CD">#F3E8CD</button><span>RGB 243 232 205</span></div><p>Main type, the "N", the axe blade, the atom's electrons. About a third of the printed area.</p></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--orange);color:var(--ink)">INK 2</div><div class="info"><h3>Safety Orange</h3><div class="codes"><button type="button" data-copy="#EA7E22">#EA7E22</button><span>RGB 234 126 34</span></div><p>The "M", the box, the axe handle, the nucleus. Warm solid fills, never outlines.</p></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--teal);color:var(--ink)">INK 3</div><div class="info"><h3>Electric Teal</h3><div class="codes"><button type="button" data-copy="#17B7C3">#17B7C3</button><span>RGB 23 183 195</span></div><p>Outlines, orbits and the word "BOX". The line color that holds every icon together.</p></div></div>
+      <div class="swatch"><div class="chip" style="background:var(--ink);color:var(--cream);box-shadow:inset 0 0 0 1px var(--rule)">GROUND</div><div class="info"><h3>Black</h3><div class="codes"><button type="button" data-copy="#000000">#000000</button><span>Raised: <button type="button" data-copy="#111111">#111111</button></span></div><p>Every background. Use #111111 for cards and panels that sit on black.</p></div></div>
+    </div>
+    <div class="label">Measured share of printed area in the logo</div>
+    <div class="ratio" role="img" aria-label="Cream 36 percent, orange 35 percent, teal 29 percent">
+      <span style="flex:36;background:var(--cream)">Cream 36%</span>
+      <span style="flex:35;background:var(--orange)">Orange 35%</span>
+      <span style="flex:29;background:var(--teal)">Teal 29%</span>
+    </div>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Pairing</th><th>Contrast</th><th>Use</th></tr></thead>
+        <tbody>
+          <tr><td><span class="pair" style="background:var(--ink);color:var(--cream)">Cream on black</span></td><td class="num pass">17.2 : 1</td><td>Any text, any size</td></tr>
+          <tr><td><span class="pair" style="background:var(--ink);color:var(--teal)">Teal on black</span></td><td class="num pass">8.6 : 1</td><td>Headlines, links, second word</td></tr>
+          <tr><td><span class="pair" style="background:var(--ink);color:var(--orange)">Orange on black</span></td><td class="num pass">7.5 : 1</td><td>Headlines, callouts</td></tr>
+          <tr><td><span class="pair" style="background:var(--orange);color:var(--ink)">Black on orange</span></td><td class="num pass">7.5 : 1</td><td>Thumbnail banners, stickers</td></tr>
+          <tr><td><span class="pair" style="background:var(--teal);color:var(--orange)">Orange on teal</span></td><td class="num fail">1.1 : 1</td><td>Never touch directly. Separate with a black gap or outline.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <header><div class="label">02 · Letters</div><h2>Typography</h2></header>
+    <p>The logo lettering is a heavy geometric grotesque. Barlow is the closest free match on Google Fonts, so it is free to use in thumbnails, overlays and merch.</p>
+    <div class="type-grid">
+      <div class="spec"><div class="label">Wordmark &amp; headlines · Barlow Black 900</div><div class="sample-display">Axiom <span style="color:var(--teal)">Box</span></div><p>All caps, tight but not touching. "AXIOM" in cream, "BOX" in teal, always.</p></div>
+      <div class="spec"><div class="label">Rebus glyphs &amp; thumbnails · Barlow Condensed 800</div><div class="sample-cond">−N+<span style="color:var(--orange)">M</span></div><p>For the letters inside a puzzle and big thumbnail words. Narrow enough to fit three words across a phone.</p></div>
+      <div class="spec"><div class="label">Body · Barlow 400 / 500</div><div class="sample-body">Captions, descriptions, community posts and end-screen text sit in regular weight cream on black.</div><p>Set at 16 px or larger on screen.</p></div>
+      <div class="spec"><div class="label">Data &amp; labels · IBM Plex Mono 400</div><div class="sample-mono">EP 014 · 12:48 · F = ma</div><p>Episode numbers, timestamps, formulas. Small, uppercase, a little letter-spacing.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <header><div class="label">03 · Texture</div><h2>Print finish</h2></header>
+    <p>Every solid fill carries a fine black speckle, as if the ink didn't fully cover. It makes flat vector shapes read as printed. Keep it inside shapes. The black ground stays clean.</p>
+    <div class="texture">
+      <div class="tex"><canvas data-ink="#F3E8CD"></canvas><span>Cream + speckle</span></div>
+      <div class="tex"><canvas data-ink="#EA7E22"></canvas><span>Orange + speckle</span></div>
+      <div class="tex"><canvas data-ink="#17B7C3"></canvas><span>Teal + speckle</span></div>
+    </div>
+  </section>
+
+  <section>
+    <header><div class="label">04 · Rules</div><h2>Graphic style</h2></header>
+    <div class="rules">
+      <div class="rulecard do"><h3>Do</h3><ul>
+        <li>Draw icons as flat shapes with a thick teal outline and black inner linework.</li>
+        <li>Build new graphics as puzzles: an object, a sign, a letter. Plus, minus, equals.</li>
+        <li>Keep each icon to two inks plus black.</li>
+        <li>Leave generous black space around the logo, at least the height of the "M".</li>
+        <li>Use the full rebus where it can be read. Below 200 px wide, use the wordmark alone.</li>
+      </ul></div>
+      <div class="rulecard dont"><h3>Don't</h3><ul>
+        <li>Put the logo on white or light grey. The cream ink and black linework disappear.</li>
+        <li>Let orange sit directly against teal.</li>
+        <li>Add gradients, glows, drop shadows or 3D bevels.</li>
+        <li>Swap the colors of "AXIOM" and "BOX", or set the wordmark in a thin weight.</li>
+        <li>Speckle the black background.</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section>
+    <header><div class="label">05 · Formats</div><h2>Where it goes</h2></header>
+    <div class="scroll">
+      <table class="sizes">
+        <thead><tr><th>Asset</th><th>Size (px)</th><th>Keep inside</th><th>Logo treatment</th></tr></thead>
+        <tbody>
+          <tr><td>YouTube banner</td><td class="num">2560 × 1440</td><td class="num">1546 × 423 center</td><td>Full rebus + wordmark, centered in the safe area</td></tr>
+          <tr><td>Channel avatar</td><td class="num">800 × 800</td><td class="num">Circle crop</td><td>Compact square logo, or the box icon alone</td></tr>
+          <tr><td>Thumbnail</td><td class="num">1280 × 720</td><td class="num">Bottom-right 20% has the timestamp</td><td>Wordmark small, top-left. Topic in Barlow Condensed.</td></tr>
+          <tr><td>Video watermark</td><td class="num">150 × 150</td><td class="num">—</td><td>Box icon only</td></tr>
+          <tr><td>Shirt front</td><td class="num">4500 × 5400 @ 300 DPI</td><td class="num">Dark garments only</td><td>Full rebus, wordmark at 60%: <code>axiom-box-print.png</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>Palette sampled from the Higgsfield screen-print artwork, Oct 27 2026. Files: axiom-box/ on branch claude/pensive-mccarthy-tc0o5v.</footer>
+</div>
+<div class="toast" id="toast" hidden>Copied</div>
+
+<script>
+// Speckled ink fills, drawn once.
+document.querySelectorAll('.tex canvas').forEach(function (cv) {
+  var s = 400; cv.width = s; cv.height = s;
+  var g = cv.getContext('2d');
+  g.fillStyle = cv.dataset.ink; g.fillRect(0, 0, s, s);
+  var seed = cv.dataset.ink.charCodeAt(2) * 97;
+  function rnd() { seed = (seed * 16807) % 2147483647; return seed / 2147483647; }
+  g.fillStyle = '#000000';
+  for (var i = 0; i < 2600; i++) {
+    var r = rnd() < .9 ? rnd() * 1.4 + .3 : rnd() * 3 + 1;
+    g.globalAlpha = .35 + rnd() * .6;
+    g.beginPath(); g.arc(rnd() * s, rnd() * s, r, 0, 6.283); g.fill();
+  }
+});
+// Copy hex codes.
+var toast = document.getElementById('toast'), tid;
+document.querySelectorAll('[data-copy]').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var v = b.dataset.copy;
+    function show(msg) { toast.textContent = msg; toast.hidden = false; clearTimeout(tid); tid = setTimeout(function () { toast.hidden = true; }, 1400); }
+    try {
+      navigator.clipboard.writeText(v).then(function () { show('Copied ' + v); }, function () { select(b); show('Press Ctrl+C to copy'); });
+    } catch (e) { select(b); show('Press Ctrl+C to copy'); }
+  });
+});
+function select(el) { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+</script>
